@@ -1,5 +1,0 @@
-halt
-loadfile C:/Pico/murmulator/Cross/esp_8_bit/bin/MinSizeRel/pico-8-bit-366MHz.elf
-r
-go
-exit

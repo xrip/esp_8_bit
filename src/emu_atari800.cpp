@@ -24,8 +24,10 @@ extern "C" {
 #include "atari800/sound.h"
 #include "atari800/akey.h"
 #include "atari800/memory.h"
+#include <ff.h>
 }
 
+#define printf(...)
 
 using namespace std;
 string get_ext(const string& s);
@@ -683,7 +685,7 @@ const char* _atari_ext[] = {
 
 class File {
 public:
-    FILE *_fd;
+    FIL _fd;
     size_t _len;
 
     static int le16(const void* d)
@@ -699,25 +701,21 @@ public:
     }
 
     File(const string& name) : _len(0) {
-        _fd = fopen(name.c_str(),"rb");
-        if (_fd) {
-            fseek(_fd,0,SEEK_END);
-            _len = ftell(_fd);
+        if (f_open(&_fd, name.c_str(), FA_READ) == FR_OK) {
+            _len = f_size(&_fd);
         }
     }
 
-    virtual ~File()
-    {
-        if (_fd)
-            fclose(_fd);
+    virtual ~File() {
+        if (_len) f_close(&_fd);
     }
 
-    int read(void* dst, int offset, int len)
-    {
-        if (!_fd)
-            return -1;
-        fseek(_fd,offset,SEEK_SET);
-        return (int)fread(dst,1,len,_fd);
+    int read(void* dst, int offset, int len) {
+        if (!_len) return -1;
+        if (f_lseek(&_fd, offset) != FR_OK) return -1;
+        UINT rd;
+        if (f_read(&_fd, dst, len, &rd) != FR_OK) return -1;
+        return (int)rd;
     }
 };
 
