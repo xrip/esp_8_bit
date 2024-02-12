@@ -16,6 +16,9 @@
 */
 
 #include "emu.h"
+extern "C" {
+    #include "ff.h"
+}
 
 using namespace std;
 
@@ -581,23 +584,24 @@ public:
         _path = name;
         _files.clear();
         map<string,int> files;  // sort by name
-        DIR* dirp = opendir(name);
-        if (!dirp)
+        DIR dir;
+        FRESULT res = f_opendir(&dir, name);
+        if (res != FR_OK)
             return;             // no folder yet
-        struct dirent * dp;
-        while ((dp = readdir(dirp)) != NULL) {
-            if (dp->d_type == DT_DIR) {
+        FILINFO fileInfo;
+        while(f_readdir(&dir, &fileInfo) == FR_OK && fileInfo.fname[0] != '\0') {
+            if (fileInfo.fattrib & AM_DIR) {
                 // directory
             } else {
-                string ext = get_ext(dp->d_name);
+                string ext = get_ext(fileInfo.fname);
                 int e = want(ext.c_str());
                 if (e != -1)
-                    files[dp->d_name] = e;
+                    files[fileInfo.fname] = e;
             }
         }
         for (auto& p : files)
             _files.push_back(p.first);
-        closedir(dirp);
+        f_closedir(&dir);
     }
 
     void draw_menu(int x, const char* name, bool selected)

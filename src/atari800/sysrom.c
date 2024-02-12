@@ -24,8 +24,6 @@
 
 #include "config.h"
 
-#include <ff.h>
-
 #include <ctype.h>
 #ifdef HAVE_DIRENT_H
 #include <dirent.h>
@@ -208,24 +206,22 @@ int SYSROM_SetPath(char const *filename, int num, ...)
 	int len;
 	ULONG crc;
 	int retval = SYSROM_OK;
-	FILE *f = fopen(filename, "rb");
-
-	if (f == NULL)
+	FIL f;
+	if (FR_OK == f_open(&f, filename, FA_READ))
 		return SYSROM_ERROR;
 
-	len = Util_flen(f);
+	len = f_size(&f);
 	/* Don't proceed to CRC computation if the file has invalid size. */
 	if (!IsLengthAllowed(len)) {
-		fclose(f);
+		f_close(&f);
 		return SYSROM_BADSIZE;
 	}
 	Util_rewind(f);
-	if (!CRC32_FromFile(f, &crc)) {
-		fclose(f);
+	if (!CRC32_FromFile(&f, &crc)) {
+		f_close(&f);
 		return SYSROM_ERROR;
 	}
-	fclose(f);
-
+	f_close(&f);
 	va_start(ap, num);
 	while (num > 0) {
 		int id = va_arg(ap, int);
@@ -287,42 +283,38 @@ static int MatchByName(char const *filename, int len, int only_if_not_set)
 
 int SYSROM_FindInDir(char const *directory, int only_if_not_set)
 {
-	DIR *dir;
-	struct dirent *entry;
-
+	DIR dir;
+	FILINFO fileInfo;
 	if (only_if_not_set && num_unset_roms == 0)
 		/* No unset ROM paths left. */
 		return TRUE;
 
-	if ((dir = opendir(directory)) == NULL)
+	if (f_opendir(&dir, directory) != FR_OK)
 		return FALSE;
 
-	while ((entry = readdir(dir)) != NULL) {
+	while (f_readdir(&dir, &fileInfo) == FR_OK && fileInfo.fname[0] != '\0') {
 		char full_filename[FILENAME_MAX];
-		FILE *file;
+		FIL file;
 		int len;
 		int id;
 		ULONG crc;
 		int matched_crc = FALSE;
-		Util_catpath(full_filename, directory, entry->d_name);
-		if ((file = fopen(full_filename, "rb")) == NULL)
+		Util_catpath(full_filename, directory, fileInfo.fname);
+		if (f_open(&file, full_filename, FA_READ) != FR_OK)
 			/* Ignore non-readable files (e.g. directories). */
 			continue;
-
-		len = Util_flen(file);
+		len = Util_flen(&file);
 		/* Don't proceed to CRC computation if the file has invalid size. */
 		if (!IsLengthAllowed(len)){
-			fclose(file);
+			f_close(&file);
 			continue;
 		}
 		Util_rewind(file);
-
-		if (!CRC32_FromFile(file, &crc)) {
-			fclose(file);
+		if (!CRC32_FromFile(&file, &crc)) {
+			f_close(&file);
 			continue;
 		}
-		fclose(file);
-
+		f_close(&file);
 		/* Match ROM image by CRC. */
 		for (id = 0; id < SYSROM_LOADABLE_SIZE; ++id) {
 			if ((!only_if_not_set || SYSROM_roms[id].unset)
@@ -334,24 +326,21 @@ int SYSROM_FindInDir(char const *directory, int only_if_not_set)
 				break;
 			}
 		}
-
 		if (!matched_crc) {
 			/* Match custom ROM image by name. */
-			char *c = entry->d_name;
+			char *c = fileInfo.fname;
 			while (*c != 0) {
 				*c = (char)tolower(*c);
 				++c;
 			}
-
-			id = MatchByName(entry->d_name, len, only_if_not_set);
+			id = MatchByName(fileInfo.fname, len, only_if_not_set);
 			if (id >= 0){
 				strcpy(SYSROM_roms[id].filename, full_filename);
 				ClearUnsetFlag(id);
 			}
 		}
 	}
-
-	closedir(dir);
+	f_closedir(&dir);
 	return TRUE;
 }
 
@@ -597,7 +586,15 @@ int SYSROM_ReadConfig(char *string, char *ptr)
 	return TRUE;
 }
 
-void SYSROM_WriteConfig(FILE *fp)
+#define fprintf(FIL, FMT, ...) {\
+ char tmp[128];\
+ snprintf(tmp, 128, FMT, __VA_ARGS__);\
+ size_t len = strlen(tmp);\
+ UINT w;\
+ f_write(FIL, tmp, len, &w);\
+}
+
+void SYSROM_WriteConfig(FIL *fp)
 {
 	int id;
 	for (id = 0; id < SYSROM_LOADABLE_SIZE; ++id) {

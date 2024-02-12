@@ -15,8 +15,8 @@
 ** SOFTWARE.
 */
 
-#include "freertos/FreeRTOS.h"
-#include "freertos/task.h"
+///#include "freertos/FreeRTOS.h"
+///#include "freertos/task.h"
 #include "emu.h"
 #include "media.h"
 
@@ -472,7 +472,7 @@ public:
         if (nes_emulate_init(path.c_str(),width,height))
 			printf("NES init failed\n");
 		
-		vTaskDelay(100 / portTICK_RATE_MS);
+	///	vTaskDelay(100 / portTICK_RATE_MS);
         _lines = nes_emulate_frame(true);   // first frame!
         return 0;
     }

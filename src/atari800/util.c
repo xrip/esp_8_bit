@@ -388,10 +388,13 @@ int Util_direxists(const char *filename)
 
 #elif defined(HAVE_STAT)
 
-int Util_direxists(const char *filename)
-{
-	struct stat filestatus;
-	return stat(filename, &filestatus) == 0 && (filestatus.st_mode & S_IFDIR);
+int Util_direxists(const char *filename) {
+	DIR dir;
+    if (f_opendir(&dir, filename) != FR_OK) {
+        return FALSE;
+    }
+    f_closedir(&dir);
+	return TRUE;
 }
 
 #else
@@ -404,10 +407,8 @@ int Util_direxists(const char *filename)
 #endif /* defined(HAVE_STAT) */
 
 
-int Util_flen(FILE *fp)
-{
-	fseek(fp, 0, SEEK_END);
-	return (int) ftell(fp);
+int Util_flen(FIL *fp) {
+	return (int) f_size(fp);
 }
 
 /* Creates a file that does not exist and fills in filename with its name.

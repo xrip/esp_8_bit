@@ -222,8 +222,10 @@ FILE* mkfile(const char* path)
 }
 
 #else
-#include <sys/stat.h>
-#include "../miniz.h"
+///#include <sys/stat.h>
+extern "C" {
+#include "ff.h"
+}
 
 uint8_t* map_file(const char* path, int len)
 {
@@ -236,15 +238,15 @@ void unmap_file(uint8_t* ptr)
 {
     delete ptr;
 }
-
-FILE* mkfile(const char* path)
+/***
+FILE* mkfile(const char* path) // TODO:
 {
     std::string v = path;
     std::string dir = v.substr(0,v.find_last_of("/"));
     mkdir(dir.c_str(), 0755);
     return fopen(path,"wb");
 }
-
+*/
 #endif
 
 // map one bit array to another
@@ -263,6 +265,7 @@ uint32_t generic_map(uint32_t bits, const uint32_t* m)
 // could actually use the screen mem (which might look cool) or the main cpu mem for buffer
 int unpack(const char* dst, const uint8_t* d, int len)
 {
+    /** TODO:
     printf("unpacking %s\n",dst);
     FILE* f = mkfile(dst);
     if (!f)
@@ -300,7 +303,7 @@ int unpack(const char* dst, const uint8_t* d, int len)
         remove(dst);
         return -1;
     }
-    return 0;
+    return 0;*/ return -1;
 }
 
 Emu::Emu(const char* n,int w,int h, int st, int aformat, int cc, int f) :
@@ -336,13 +339,13 @@ const uint32_t* Emu::composite_palette()
 // determine file type
 int Emu::head(const std::string& path, uint8_t* data, int len)
 {
-    FILE *f = fopen(path.c_str() , "rb");
-    if (!f)
+    FIL f;
+    if (f_open(&f, path.c_str(), FA_READ) != FR_OK)
         return -1;
-    fread(data,1,len,f);
-    fseek(f, 0, SEEK_END);
-    int flen =(int)ftell(f);
-    fclose(f);
+    UINT br;
+    f_read(&f, data, len, &br);
+    int flen =(int)f_size(&f);
+    f_close(&f);
     return flen;
 }
 
@@ -350,22 +353,19 @@ int Emu::load(const std::string& path, uint8_t** data, int* len)
 {
     *data = 0;
     *len = 0;
-    FILE *f = fopen(path.c_str(), "rb");
-    if (!f) {
-        printf("Emu::load failed for %s\n",path.c_str());
+    FIL f;
+    if (f_open(&f, path.c_str(), FA_READ) != FR_OK)
         return -1;
-    }
-    fseek(f, 0, SEEK_END);
-    int fsize = (int)ftell(f);
-    fseek(f, 0, SEEK_SET);
+    int fsize = (int)f_size(&f);
     uint8_t* d = new uint8_t[fsize];
     if (!d) {
         printf("Emu::load failed for %s (out of memory)\n",path.c_str());
-        fclose(f);
+        f_close(&f);
         return -1;
     }
-    fread(d, 1, fsize, f);
-    fclose(f);
+    UINT br;
+    f_read(&f, d, fsize, &br);
+    f_close(&f);
 
     printf("Emu::load %d bytes %s\n",fsize,path.c_str());
     *data = d;

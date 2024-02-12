@@ -133,7 +133,7 @@ void gui_msg(const char* msg);         // temporarily display a msg
 std::string get_ext(const std::string& s);
 extern "C" uint8_t* map_file(const char* path, int len);
 extern "C" void unmap_file(uint8_t* ptr);
-extern "C" FILE* mkfile(const char* path);
+///extern "C" FILE* mkfile(const char* path);
 extern "C" int unpack(const char* dst_path, const uint8_t* d, int len);
 
 void audio_write_16(const int16_t* s, int len, int channels);

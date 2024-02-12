@@ -165,13 +165,13 @@
 #define HAVE_MKDIR 1
 
 /* Define to 1 if you have the `mkstemp' function. */
-#define HAVE_MKSTEMP 1
+///#define HAVE_MKSTEMP 1
 
 /* Define to 1 if you have the `mktemp' function. */
-#define HAVE_MKTEMP 1
+///#define HAVE_MKTEMP 1
 
 /* Define to 1 if you have the `modf' function. */
-#define HAVE_MODF 1
+///#define HAVE_MODF 1
 
 /* Define to 1 if you have the `nanosleep' function. */
 #define HAVE_NANOSLEEP 1
@@ -198,7 +198,7 @@
 #define HAVE_RENAME 1
 
 /* Define to 1 if you have the `rewind' function. */
-#define HAVE_REWIND 1
+//#define HAVE_REWIND 1
 
 /* Define to 1 if you have the `rmdir' function. */
 #define HAVE_RMDIR 1

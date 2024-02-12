@@ -13,6 +13,10 @@
         "random": "cpp",
         "chrono": "cpp",
         "cmath": "cpp",
-        "util.h": "c"
+        "util.h": "c",
+        "roms_altirra_5200_os.h": "c",
+        "crc32.h": "c",
+        "config.h": "c",
+        "atari.h": "c"
     }
 }

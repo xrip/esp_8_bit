@@ -1,7 +1,7 @@
 #ifndef CRC32_H_
 #define CRC32_H_
 
-#include <stdio.h>
+#include "ff.h"
 
 #include "atari.h"
 
@@ -11,6 +11,6 @@ ULONG CRC32_Update(ULONG crc, UBYTE const *buf, unsigned int len);
 
 /* Compute CRC32 of a stream F and store it at *RESULT. Return non-zero on
    success or 0 on read error. */
-int CRC32_FromFile(FILE *f, ULONG *result);
+int CRC32_FromFile(FIL *f, ULONG *result);
 
 #endif /* CRC32_H_ */

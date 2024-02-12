@@ -2,7 +2,7 @@
 #define UTIL_H_
 
 #include "config.h"
-#include <stdio.h>
+#include <ff.h>
 #include <string.h>
 #if HAVE_STRINGS_H
 #include <strings.h>
@@ -148,12 +148,12 @@ int Util_direxists(const char *filename);
 #ifdef HAVE_REWIND
 #define Util_rewind(fp) rewind(fp)
 #else
-#define Util_rewind(fp) fseek(fp, 0, SEEK_SET)
+#define Util_rewind(fp) f_seek(fp, 0)
 #endif
 
 /* Returns the length of an open stream.
    May change the current position. */
-int Util_flen(FILE *fp);
+int Util_flen(FIL *fp);
 
 /* Deletes a file, returns 0 on success, -1 on failure. */
 #ifdef HAVE_WINDOWS_H

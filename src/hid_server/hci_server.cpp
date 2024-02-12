@@ -333,7 +333,7 @@ class PacketQ
     uint32_t _write;
     enum {QSIZE = 32};
     vector<uint8_t> _data[QSIZE];
-    mutex _mutex;
+///    mutex _mutex;
 public:
     PacketQ() : _read(0),_write(0) {};
 
@@ -343,7 +343,7 @@ public:
     }
     bool read(vector<uint8_t>& d)
     {
-        lock_guard<mutex> lock(_mutex);
+////        lock_guard<mutex> lock(_mutex);
         assert(_read <= _write);
         if (_read == _write)
             return false;
@@ -353,7 +353,7 @@ public:
 
     bool write(const vector<uint8_t>& d)
     {
-        lock_guard<mutex> lock(_mutex);
+////        lock_guard<mutex> lock(_mutex);
         assert(_read <= _write && (_write - _read <= QSIZE));
         if (_write - _read == QSIZE)
             return false;
