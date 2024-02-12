@@ -1,7 +1,7 @@
 #pragma GCC optimize ("O2")
 #pragma once
-#define PAL 0
-#define NTSC 1
+///#define PAL 0
+///#define NTSC 1
 
 /******************************************************************/
 /*Some stats about where we spend our time*/
@@ -11,12 +11,12 @@
 /******************************************************************/
 /*Choose one of the video standards: PAL or NTSC*/
 /******************************************************************/
-#define VIDEO_STANDARD NTSC
+///#define VIDEO_STANDARD NTSC
 
 /******************************************************************/
 /*Choose one of the following emulators: EMU_NES,EMU_SMS,EMU_ATARI*/
 /******************************************************************/
-#define EMULATOR EMU_NES
+#define EMULATOR EMU_ATARI
 
 /******************************************************************/
 /*Many emus work fine on a single core (S2), file system access can cause a little flickering*/
@@ -26,9 +26,9 @@
 /****************************************************************/
 /*ESP pin map*/
 /****************************************************************/
-#define VIDEO_PIN   25	// Both 25 and 26 are locked to video output
-#define AUDIO_PIN   18  // can be any pin
-#define IR_PIN      0   // TSOP4838 or equivalent on any pin if desired
+///#define VIDEO_PIN   25	// Both 25 and 26 are locked to video output
+///#define AUDIO_PIN   18  // can be any pin
+///#define IR_PIN      0   // TSOP4838 or equivalent on any pin if desired
 
 //NES OR SNES classic controller (wire colors might be different, double check!)
 //       ___

@@ -184,6 +184,10 @@ target_compile_definitions(${PROJECT_NAME} PRIVATE
         SOUND_SYSTEM
         COVOX
         AYSOUND
+
+        VGA
+        #HDMI
+        #TFT
 )
 
 
