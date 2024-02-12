@@ -279,20 +279,15 @@ int main() {
 
     keyboard_init();
     nespad_begin(clock_get_hz(clk_sys) / 1000, NES_GPIO_CLK, NES_GPIO_DATA, NES_GPIO_LAT);
-while(1)
-    for (int i = 2; i--;) {
-        nespad_read();
-        sleep_ms(50);
-        if ((nespad_state & DPAD_SELECT) != 0) {
-            sem_init(&vga_start_semaphore, 0, 1);
-            multicore_launch_core1(render_core);
-            sem_release(&vga_start_semaphore);
 
-            sleep_ms(250);
-            filebrowser("", "uf2");
-        }
+    sem_init(&vga_start_semaphore, 0, 1);
+    multicore_launch_core1(render_core);
+    sem_release(&vga_start_semaphore);
+    nespad_read(); // nespad_state & DPAD_SELECT
+    while(1) {
+    //    sleep_ms(250);
+        filebrowser("", "uf2");
     }
-
 
     __unreachable();
 }
