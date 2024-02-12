@@ -12,6 +12,7 @@
         "stack": "cpp",
         "random": "cpp",
         "chrono": "cpp",
-        "cmath": "cpp"
+        "cmath": "cpp",
+        "util.h": "c"
     }
 }

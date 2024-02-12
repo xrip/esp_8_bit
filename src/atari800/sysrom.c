@@ -24,6 +24,8 @@
 
 #include "config.h"
 
+#include <ff.h>
+
 #include <ctype.h>
 #ifdef HAVE_DIRENT_H
 #include <dirent.h>

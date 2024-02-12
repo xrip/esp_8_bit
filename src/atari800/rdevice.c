@@ -160,7 +160,7 @@ extern void dc_set_baud(int baud);
 #else /* above DREAMCAST, below not WIN32 and not DREAMCAST */
 
 #if !defined(R_SERIAL) && !defined(R_NETWORK)
-#error R: device needs serial or network or both
+///#error R: device needs serial or network or both
 #endif
 #ifdef R_NETWORK
 #include <sys/socket.h>

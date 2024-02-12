@@ -1,0 +1,5798 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "C:/Pico/murmulator/Cross/esp_8_bit/bin/MinSizeRel/pico-8-bit-366MHz.elf"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"target_link_options",
+			"target_link_libraries",
+			"pico_define_boot_stage2",
+			"add_dependencies",
+			"pico_generate_pio_header",
+			"include",
+			"target_compile_options",
+			"family_add_default_example_warnings",
+			"rp2040_family_configure_example_warnings",
+			"family_configure_device_example",
+			"target_compile_definitions",
+			"family_configure_target",
+			"pico_set_program_name",
+			"pico_set_program_version",
+			"pico_add_extra_outputs",
+			"target_include_directories",
+			"target_sources"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt",
+			"C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/boot_stage2/CMakeLists.txt",
+			"C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/tools/CMakeLists.txt",
+			"drivers/sdcard/sdcard.cmake",
+			"drivers/sdcard/CMakeLists.txt",
+			"drivers/psram/CMakeLists.txt",
+			"C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/lib/tinyusb/hw/bsp/family_support.cmake",
+			"C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.cmake",
+			"C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/common/pico_binary_info/CMakeLists.txt",
+			"C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 44,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 90,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 67,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 56,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 77,
+				"parent" : 4
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 75,
+				"parent" : 4
+			},
+			{
+				"file" : 4
+			},
+			{
+				"command" : 6,
+				"file" : 4,
+				"line" : 1,
+				"parent" : 7
+			},
+			{
+				"file" : 3,
+				"parent" : 8
+			},
+			{
+				"command" : 5,
+				"file" : 3,
+				"line" : 4,
+				"parent" : 9
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 45,
+				"parent" : 10
+			},
+			{
+				"file" : 5
+			},
+			{
+				"command" : 5,
+				"file" : 5,
+				"line" : 13,
+				"parent" : 12
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 45,
+				"parent" : 13
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 92,
+				"parent" : 0
+			},
+			{
+				"command" : 9,
+				"file" : 7,
+				"line" : 179,
+				"parent" : 15
+			},
+			{
+				"command" : 8,
+				"file" : 7,
+				"line" : 167,
+				"parent" : 16
+			},
+			{
+				"command" : 7,
+				"file" : 6,
+				"line" : 312,
+				"parent" : 17
+			},
+			{
+				"command" : 7,
+				"file" : 6,
+				"line" : 343,
+				"parent" : 17
+			},
+			{
+				"command" : 7,
+				"file" : 6,
+				"line" : 348,
+				"parent" : 17
+			},
+			{
+				"command" : 7,
+				"file" : 6,
+				"line" : 353,
+				"parent" : 17
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 118,
+				"parent" : 0
+			},
+			{
+				"command" : 11,
+				"file" : 0,
+				"line" : 134,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 7,
+				"line" : 178,
+				"parent" : 15
+			},
+			{
+				"command" : 12,
+				"file" : 7,
+				"line" : 177,
+				"parent" : 15
+			},
+			{
+				"command" : 2,
+				"file" : 7,
+				"line" : 159,
+				"parent" : 25
+			},
+			{
+				"command" : 11,
+				"file" : 0,
+				"line" : 54,
+				"parent" : 0
+			},
+			{
+				"command" : 13,
+				"file" : 0,
+				"line" : 46,
+				"parent" : 0
+			},
+			{
+				"command" : 11,
+				"file" : 8,
+				"line" : 15,
+				"parent" : 28
+			},
+			{
+				"command" : 14,
+				"file" : 0,
+				"line" : 47,
+				"parent" : 0
+			},
+			{
+				"command" : 11,
+				"file" : 8,
+				"line" : 33,
+				"parent" : 30
+			},
+			{
+				"command" : 15,
+				"file" : 7,
+				"line" : 157,
+				"parent" : 25
+			},
+			{
+				"command" : 11,
+				"file" : 9,
+				"line" : 30,
+				"parent" : 32
+			},
+			{
+				"command" : 16,
+				"file" : 0,
+				"line" : 100,
+				"parent" : 0
+			},
+			{
+				"command" : 17,
+				"file" : 0,
+				"line" : 94,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-mcpu=cortex-m0plus -mthumb   -ffunction-sections -fdata-sections -O2 -Os -DNDEBUG"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Werror"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wfatal-errors"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wdouble-promotion"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wfloat-equal"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wwrite-strings"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wsign-compare"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wmissing-format-attribute"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wunreachable-code"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wcast-align"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wcast-qual"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wnull-dereference"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wuninitialized"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wunused"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wredundant-decls"
+				},
+				{
+					"backtrace" : 19,
+					"fragment" : "-Wconversion"
+				},
+				{
+					"backtrace" : 20,
+					"fragment" : "-Wcast-function-type"
+				},
+				{
+					"backtrace" : 20,
+					"fragment" : "-Wstrict-overflow"
+				},
+				{
+					"backtrace" : 21,
+					"fragment" : "-Wno-strict-aliasing"
+				},
+				{
+					"backtrace" : 22,
+					"fragment" : "-Wno-error=suggest-attribute=format"
+				},
+				{
+					"backtrace" : 22,
+					"fragment" : "-Wno-error=cast-qual"
+				},
+				{
+					"backtrace" : 22,
+					"fragment" : "-Wno-error=unused-parameter"
+				},
+				{
+					"backtrace" : 22,
+					"fragment" : "-Wno-error=conversion"
+				},
+				{
+					"backtrace" : 22,
+					"fragment" : "-Wno-error=format="
+				},
+				{
+					"backtrace" : 22,
+					"fragment" : "-Wno-error=sign-compare"
+				},
+				{
+					"backtrace" : 22,
+					"fragment" : "-Wno-error=missing-field-initializers"
+				},
+				{
+					"backtrace" : 22,
+					"fragment" : "-Wno-error=switch"
+				},
+				{
+					"backtrace" : 22,
+					"fragment" : "-Wno-error=implicit-fallthrough="
+				},
+				{
+					"backtrace" : 22,
+					"fragment" : "-Wno-error=stringop-truncation"
+				},
+				{
+					"backtrace" : 22,
+					"fragment" : "-Wno-error=restrict"
+				},
+				{
+					"backtrace" : 22,
+					"fragment" : "-w"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-ffunction-sections"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-fdata-sections"
+				},
+				{
+					"fragment" : "-std=gnu11"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 23,
+					"define" : "AYSOUND"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "BEEPER_PIN=28"
+				},
+				{
+					"backtrace" : 24,
+					"define" : "CFG_TUSB_DEBUG=0"
+				},
+				{
+					"backtrace" : 24,
+					"define" : "CFG_TUSB_MCU=OPT_MCU_RP2040"
+				},
+				{
+					"backtrace" : 24,
+					"define" : "CFG_TUSB_OS=OPT_OS_PICO"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "COVOX"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "ESP_PLATFORM=PICO"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_BIT_OPS=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_BIT_OPS_PICO=1"
+				},
+				{
+					"backtrace" : 26,
+					"define" : "LIB_PICO_BOOTSEL_VIA_DOUBLE_RESET=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_DIVIDER=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_DIVIDER_HARDWARE=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_DOUBLE=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_DOUBLE_PICO=1"
+				},
+				{
+					"backtrace" : 24,
+					"define" : "LIB_PICO_FIX_RP2040_USB_DEVICE_ENUMERATION=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_FLOAT=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_FLOAT_PICO=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_INT64_OPS=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_INT64_OPS_PICO=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_MALLOC=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_MEM_OPS=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_MEM_OPS_PICO=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_MULTICORE=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_PLATFORM=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_PRINTF=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_PRINTF_PICO=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_RAND=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_RUNTIME=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_STANDARD_LINK=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_STDIO=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_STDLIB=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_SYNC=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_SYNC_CRITICAL_SECTION=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_SYNC_MUTEX=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_SYNC_SEM=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_TIME=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_UNIQUE_ID=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_UTIL=1"
+				},
+				{
+					"backtrace" : 26,
+					"define" : "LIB_TINYUSB_BOARD=1"
+				},
+				{
+					"backtrace" : 24,
+					"define" : "LIB_TINYUSB_DEVICE=1"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "LOAD_WAV_2_COVOX=1"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "LOAD_WAV_PIO=22"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "NES_GPIO_CLK=14"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "NES_GPIO_DATA=16"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "NES_GPIO_LAT=15"
+				},
+				{
+					"backtrace" : 27,
+					"define" : "OVERCLOCKING=366"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "PICO_BOARD=\"pico\""
+				},
+				{
+					"backtrace" : 3,
+					"define" : "PICO_BUILD=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "PICO_BUILD_BOOT_STAGE2_NAME=\"compile_time_choice\""
+				},
+				{
+					"backtrace" : 3,
+					"define" : "PICO_CMAKE_BUILD_TYPE=\"MinSizeRel\""
+				},
+				{
+					"backtrace" : 3,
+					"define" : "PICO_COPY_TO_RAM=0"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "PICO_CXX_ENABLE_EXCEPTIONS=1"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "PICO_DEFAULT_UART_RX_PIN=-1"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "PICO_DEFAULT_UART_TX_PIN=0"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "PICO_HEAP_SIZE=0"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "PICO_NO_FLASH=0"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "PICO_NO_HARDWARE=0"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "PICO_ON_DEVICE=1"
+				},
+				{
+					"backtrace" : 29,
+					"define" : "PICO_PROGRAM_NAME=\"PICO Atari 400/800, XL, XEGS, 5200 Emulator for ZX Murmulator devboard by DnCraptor\""
+				},
+				{
+					"backtrace" : 31,
+					"define" : "PICO_PROGRAM_VERSION_STRING=\"test\""
+				},
+				{
+					"backtrace" : 26,
+					"define" : "PICO_RP2040_USB_DEVICE_ENUMERATION_FIX=1"
+				},
+				{
+					"backtrace" : 26,
+					"define" : "PICO_RP2040_USB_DEVICE_UFRAME_FIX=1"
+				},
+				{
+					"backtrace" : 33,
+					"define" : "PICO_TARGET_NAME=\"pico-8-bit\""
+				},
+				{
+					"backtrace" : 3,
+					"define" : "PICO_USE_BLOCKED_RAM=0"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "PSRAM_ASYNC=1"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "PSRAM_PIN_CS=18"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "PSRAM_PIN_MISO=21"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "PSRAM_PIN_MOSI=20"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "PSRAM_PIN_SCK=19"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "PSRAM_SPINLOCK=1"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "SDCARD_PIN_SPI0_CS=5"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "SDCARD_PIN_SPI0_MISO=4"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "SDCARD_PIN_SPI0_MOSI=3"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "SDCARD_PIN_SPI0_SCK=2"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "SOUND_SYSTEM"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "USE_NESPAD"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "USE_WII"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "USE_ZONE_FOR_MALLOC=1"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "WII_SCL_PIN=15"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "WII_SDA_PIN=14"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 34,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/src"
+				},
+				{
+					"backtrace" : 34,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/FakeWin"
+				},
+				{
+					"backtrace" : 34,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/BK"
+				},
+				{
+					"backtrace" : 34,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/BK/devemu"
+				},
+				{
+					"backtrace" : 34,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/BK/emutools"
+				},
+				{
+					"backtrace" : 34,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/shared"
+				},
+				{
+					"backtrace" : 34,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/disks"
+				},
+				{
+					"backtrace" : 34,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/drivers/usb"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/drivers/vga-nextgen"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/drivers/ps2"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_pio/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/common/pico_base/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/build/generated/pico_base"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/boards/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_platform/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2040/hardware_regs/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_base/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2040/hardware_structs/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_claim/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_sync/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_gpio/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_irq/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/common/pico_sync/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/common/pico_time/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_timer/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/common/pico_util/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_clocks/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_resets/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_pll/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_vreg/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_watchdog/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_xosc/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/drivers/psram"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/build/drivers/psram"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/build/drivers/sdcard"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/drivers/sdcard"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/drivers/fatfs"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/common/pico_stdlib/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_uart/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_divider/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_runtime/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_printf/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/common/pico_bit_ops/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/common/pico_divider/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_double/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_float/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_malloc/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_bootrom/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/common/pico_binary_info/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_stdio/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_int64_ops/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_mem_ops/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/boot_stage2/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_spi/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/drivers/nespad"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_rand/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_unique_id/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_flash/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_multicore/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_dma/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_i2c/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_interp/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_pwm/include"
+				},
+				{
+					"backtrace" : 26,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/lib/tinyusb/hw"
+				},
+				{
+					"backtrace" : 24,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/lib/tinyusb/src"
+				},
+				{
+					"backtrace" : 24,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/include"
+				}
+			],
+			"language" : "C",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "11"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				65,
+				66,
+				67,
+				68,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				79,
+				80,
+				81,
+				82,
+				83,
+				84,
+				85,
+				86,
+				87,
+				88,
+				89,
+				90,
+				91,
+				92,
+				93,
+				94,
+				95,
+				96,
+				97,
+				98,
+				99,
+				100,
+				101,
+				102,
+				103,
+				104,
+				105,
+				106,
+				107,
+				108,
+				109,
+				110,
+				111,
+				112,
+				113,
+				114,
+				115,
+				116,
+				117,
+				118,
+				119,
+				120,
+				121,
+				122,
+				124,
+				125,
+				126,
+				127,
+				128,
+				129,
+				131,
+				132,
+				133,
+				134,
+				135,
+				136,
+				137,
+				138,
+				139,
+				140,
+				141,
+				142,
+				143,
+				144,
+				145,
+				146,
+				147,
+				148,
+				149,
+				150,
+				151,
+				152,
+				153,
+				154,
+				156,
+				157,
+				159,
+				162,
+				163,
+				167,
+				168,
+				170,
+				174,
+				175,
+				176,
+				179,
+				180,
+				181,
+				182,
+				183,
+				184,
+				185,
+				186,
+				187,
+				188,
+				190,
+				191,
+				192,
+				193,
+				194,
+				195,
+				196,
+				197,
+				198,
+				199,
+				200,
+				201,
+				202,
+				203,
+				204,
+				205,
+				206
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-mcpu=cortex-m0plus -mthumb -ffunction-sections -fdata-sections -O2 -Os -DNDEBUG"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Werror"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wfatal-errors"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wdouble-promotion"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wfloat-equal"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wwrite-strings"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wsign-compare"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wmissing-format-attribute"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wunreachable-code"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wcast-align"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wcast-qual"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wnull-dereference"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wuninitialized"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wunused"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wredundant-decls"
+				},
+				{
+					"backtrace" : 19,
+					"fragment" : "-Wconversion"
+				},
+				{
+					"backtrace" : 20,
+					"fragment" : "-Wcast-function-type"
+				},
+				{
+					"backtrace" : 20,
+					"fragment" : "-Wstrict-overflow"
+				},
+				{
+					"backtrace" : 21,
+					"fragment" : "-Wno-strict-aliasing"
+				},
+				{
+					"backtrace" : 22,
+					"fragment" : "-Wno-error=suggest-attribute=format"
+				},
+				{
+					"backtrace" : 22,
+					"fragment" : "-Wno-error=cast-qual"
+				},
+				{
+					"backtrace" : 22,
+					"fragment" : "-Wno-error=unused-parameter"
+				},
+				{
+					"backtrace" : 22,
+					"fragment" : "-Wno-error=conversion"
+				},
+				{
+					"backtrace" : 22,
+					"fragment" : "-Wno-error=format="
+				},
+				{
+					"backtrace" : 22,
+					"fragment" : "-Wno-error=sign-compare"
+				},
+				{
+					"backtrace" : 22,
+					"fragment" : "-Wno-error=missing-field-initializers"
+				},
+				{
+					"backtrace" : 22,
+					"fragment" : "-Wno-error=switch"
+				},
+				{
+					"backtrace" : 22,
+					"fragment" : "-Wno-error=implicit-fallthrough="
+				},
+				{
+					"backtrace" : 22,
+					"fragment" : "-Wno-error=stringop-truncation"
+				},
+				{
+					"backtrace" : 22,
+					"fragment" : "-Wno-error=restrict"
+				},
+				{
+					"backtrace" : 22,
+					"fragment" : "-w"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-ffunction-sections"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-fdata-sections"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-fno-rtti"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-fno-use-cxa-atexit"
+				},
+				{
+					"fragment" : "-std=gnu++17"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 23,
+					"define" : "AYSOUND"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "BEEPER_PIN=28"
+				},
+				{
+					"backtrace" : 24,
+					"define" : "CFG_TUSB_DEBUG=0"
+				},
+				{
+					"backtrace" : 24,
+					"define" : "CFG_TUSB_MCU=OPT_MCU_RP2040"
+				},
+				{
+					"backtrace" : 24,
+					"define" : "CFG_TUSB_OS=OPT_OS_PICO"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "COVOX"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "ESP_PLATFORM=PICO"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_BIT_OPS=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_BIT_OPS_PICO=1"
+				},
+				{
+					"backtrace" : 26,
+					"define" : "LIB_PICO_BOOTSEL_VIA_DOUBLE_RESET=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_DIVIDER=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_DIVIDER_HARDWARE=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_DOUBLE=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_DOUBLE_PICO=1"
+				},
+				{
+					"backtrace" : 24,
+					"define" : "LIB_PICO_FIX_RP2040_USB_DEVICE_ENUMERATION=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_FLOAT=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_FLOAT_PICO=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_INT64_OPS=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_INT64_OPS_PICO=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_MALLOC=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_MEM_OPS=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_MEM_OPS_PICO=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_MULTICORE=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_PLATFORM=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_PRINTF=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_PRINTF_PICO=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_RAND=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_RUNTIME=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_STANDARD_LINK=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_STDIO=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_STDLIB=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_SYNC=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_SYNC_CRITICAL_SECTION=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_SYNC_MUTEX=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_SYNC_SEM=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_TIME=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_UNIQUE_ID=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_UTIL=1"
+				},
+				{
+					"backtrace" : 26,
+					"define" : "LIB_TINYUSB_BOARD=1"
+				},
+				{
+					"backtrace" : 24,
+					"define" : "LIB_TINYUSB_DEVICE=1"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "LOAD_WAV_2_COVOX=1"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "LOAD_WAV_PIO=22"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "NES_GPIO_CLK=14"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "NES_GPIO_DATA=16"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "NES_GPIO_LAT=15"
+				},
+				{
+					"backtrace" : 27,
+					"define" : "OVERCLOCKING=366"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "PICO_BOARD=\"pico\""
+				},
+				{
+					"backtrace" : 3,
+					"define" : "PICO_BUILD=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "PICO_BUILD_BOOT_STAGE2_NAME=\"compile_time_choice\""
+				},
+				{
+					"backtrace" : 3,
+					"define" : "PICO_CMAKE_BUILD_TYPE=\"MinSizeRel\""
+				},
+				{
+					"backtrace" : 3,
+					"define" : "PICO_COPY_TO_RAM=0"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "PICO_CXX_ENABLE_EXCEPTIONS=1"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "PICO_DEFAULT_UART_RX_PIN=-1"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "PICO_DEFAULT_UART_TX_PIN=0"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "PICO_HEAP_SIZE=0"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "PICO_NO_FLASH=0"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "PICO_NO_HARDWARE=0"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "PICO_ON_DEVICE=1"
+				},
+				{
+					"backtrace" : 29,
+					"define" : "PICO_PROGRAM_NAME=\"PICO Atari 400/800, XL, XEGS, 5200 Emulator for ZX Murmulator devboard by DnCraptor\""
+				},
+				{
+					"backtrace" : 31,
+					"define" : "PICO_PROGRAM_VERSION_STRING=\"test\""
+				},
+				{
+					"backtrace" : 26,
+					"define" : "PICO_RP2040_USB_DEVICE_ENUMERATION_FIX=1"
+				},
+				{
+					"backtrace" : 26,
+					"define" : "PICO_RP2040_USB_DEVICE_UFRAME_FIX=1"
+				},
+				{
+					"backtrace" : 33,
+					"define" : "PICO_TARGET_NAME=\"pico-8-bit\""
+				},
+				{
+					"backtrace" : 3,
+					"define" : "PICO_USE_BLOCKED_RAM=0"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "PSRAM_ASYNC=1"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "PSRAM_PIN_CS=18"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "PSRAM_PIN_MISO=21"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "PSRAM_PIN_MOSI=20"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "PSRAM_PIN_SCK=19"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "PSRAM_SPINLOCK=1"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "SDCARD_PIN_SPI0_CS=5"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "SDCARD_PIN_SPI0_MISO=4"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "SDCARD_PIN_SPI0_MOSI=3"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "SDCARD_PIN_SPI0_SCK=2"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "SOUND_SYSTEM"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "USE_NESPAD"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "USE_WII"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "USE_ZONE_FOR_MALLOC=1"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "WII_SCL_PIN=15"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "WII_SDA_PIN=14"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 34,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/src"
+				},
+				{
+					"backtrace" : 34,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/FakeWin"
+				},
+				{
+					"backtrace" : 34,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/BK"
+				},
+				{
+					"backtrace" : 34,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/BK/devemu"
+				},
+				{
+					"backtrace" : 34,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/BK/emutools"
+				},
+				{
+					"backtrace" : 34,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/shared"
+				},
+				{
+					"backtrace" : 34,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/disks"
+				},
+				{
+					"backtrace" : 34,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/drivers/usb"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/drivers/vga-nextgen"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/drivers/ps2"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_pio/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/common/pico_base/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/build/generated/pico_base"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/boards/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_platform/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2040/hardware_regs/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_base/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2040/hardware_structs/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_claim/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_sync/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_gpio/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_irq/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/common/pico_sync/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/common/pico_time/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_timer/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/common/pico_util/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_clocks/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_resets/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_pll/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_vreg/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_watchdog/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_xosc/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/drivers/psram"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/build/drivers/psram"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/build/drivers/sdcard"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/drivers/sdcard"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/drivers/fatfs"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/common/pico_stdlib/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_uart/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_divider/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_runtime/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_printf/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/common/pico_bit_ops/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/common/pico_divider/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_double/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_float/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_malloc/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_bootrom/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/common/pico_binary_info/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_stdio/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_int64_ops/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_mem_ops/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/boot_stage2/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_spi/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/drivers/nespad"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_rand/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_unique_id/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_flash/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_multicore/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_dma/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_i2c/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_interp/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_pwm/include"
+				},
+				{
+					"backtrace" : 26,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/lib/tinyusb/hw"
+				},
+				{
+					"backtrace" : 24,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/lib/tinyusb/src"
+				},
+				{
+					"backtrace" : 24,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/include"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "17"
+			},
+			"sourceIndexes" : 
+			[
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				173,
+				177
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-mcpu=cortex-m0plus -mthumb -Os -DNDEBUG"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Werror"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wfatal-errors"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wdouble-promotion"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wfloat-equal"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wwrite-strings"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wsign-compare"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wmissing-format-attribute"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wunreachable-code"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wcast-align"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wcast-qual"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wnull-dereference"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wuninitialized"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wunused"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wredundant-decls"
+				},
+				{
+					"backtrace" : 19,
+					"fragment" : "-Wconversion"
+				},
+				{
+					"backtrace" : 20,
+					"fragment" : "-Wcast-function-type"
+				},
+				{
+					"backtrace" : 20,
+					"fragment" : "-Wstrict-overflow"
+				},
+				{
+					"backtrace" : 21,
+					"fragment" : "-Wno-strict-aliasing"
+				},
+				{
+					"backtrace" : 22,
+					"fragment" : "-Wno-error=suggest-attribute=format"
+				},
+				{
+					"backtrace" : 22,
+					"fragment" : "-Wno-error=cast-qual"
+				},
+				{
+					"backtrace" : 22,
+					"fragment" : "-Wno-error=unused-parameter"
+				},
+				{
+					"backtrace" : 22,
+					"fragment" : "-Wno-error=conversion"
+				},
+				{
+					"backtrace" : 22,
+					"fragment" : "-Wno-error=format="
+				},
+				{
+					"backtrace" : 22,
+					"fragment" : "-Wno-error=sign-compare"
+				},
+				{
+					"backtrace" : 22,
+					"fragment" : "-Wno-error=missing-field-initializers"
+				},
+				{
+					"backtrace" : 22,
+					"fragment" : "-Wno-error=switch"
+				},
+				{
+					"backtrace" : 22,
+					"fragment" : "-Wno-error=implicit-fallthrough="
+				},
+				{
+					"backtrace" : 22,
+					"fragment" : "-Wno-error=stringop-truncation"
+				},
+				{
+					"backtrace" : 22,
+					"fragment" : "-Wno-error=restrict"
+				},
+				{
+					"backtrace" : 22,
+					"fragment" : "-w"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-ffunction-sections"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-fdata-sections"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 23,
+					"define" : "AYSOUND"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "BEEPER_PIN=28"
+				},
+				{
+					"backtrace" : 24,
+					"define" : "CFG_TUSB_DEBUG=0"
+				},
+				{
+					"backtrace" : 24,
+					"define" : "CFG_TUSB_MCU=OPT_MCU_RP2040"
+				},
+				{
+					"backtrace" : 24,
+					"define" : "CFG_TUSB_OS=OPT_OS_PICO"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "COVOX"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "ESP_PLATFORM=PICO"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_BIT_OPS=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_BIT_OPS_PICO=1"
+				},
+				{
+					"backtrace" : 26,
+					"define" : "LIB_PICO_BOOTSEL_VIA_DOUBLE_RESET=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_DIVIDER=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_DIVIDER_HARDWARE=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_DOUBLE=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_DOUBLE_PICO=1"
+				},
+				{
+					"backtrace" : 24,
+					"define" : "LIB_PICO_FIX_RP2040_USB_DEVICE_ENUMERATION=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_FLOAT=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_FLOAT_PICO=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_INT64_OPS=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_INT64_OPS_PICO=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_MALLOC=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_MEM_OPS=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_MEM_OPS_PICO=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_MULTICORE=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_PLATFORM=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_PRINTF=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_PRINTF_PICO=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_RAND=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_RUNTIME=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_STANDARD_LINK=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_STDIO=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_STDLIB=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_SYNC=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_SYNC_CRITICAL_SECTION=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_SYNC_MUTEX=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_SYNC_SEM=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_TIME=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_UNIQUE_ID=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_UTIL=1"
+				},
+				{
+					"backtrace" : 26,
+					"define" : "LIB_TINYUSB_BOARD=1"
+				},
+				{
+					"backtrace" : 24,
+					"define" : "LIB_TINYUSB_DEVICE=1"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "LOAD_WAV_2_COVOX=1"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "LOAD_WAV_PIO=22"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "NES_GPIO_CLK=14"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "NES_GPIO_DATA=16"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "NES_GPIO_LAT=15"
+				},
+				{
+					"backtrace" : 27,
+					"define" : "OVERCLOCKING=366"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "PICO_BOARD=\"pico\""
+				},
+				{
+					"backtrace" : 3,
+					"define" : "PICO_BUILD=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "PICO_BUILD_BOOT_STAGE2_NAME=\"compile_time_choice\""
+				},
+				{
+					"backtrace" : 3,
+					"define" : "PICO_CMAKE_BUILD_TYPE=\"MinSizeRel\""
+				},
+				{
+					"backtrace" : 3,
+					"define" : "PICO_COPY_TO_RAM=0"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "PICO_CXX_ENABLE_EXCEPTIONS=1"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "PICO_DEFAULT_UART_RX_PIN=-1"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "PICO_DEFAULT_UART_TX_PIN=0"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "PICO_HEAP_SIZE=0"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "PICO_NO_FLASH=0"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "PICO_NO_HARDWARE=0"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "PICO_ON_DEVICE=1"
+				},
+				{
+					"backtrace" : 29,
+					"define" : "PICO_PROGRAM_NAME=\"PICO Atari 400/800, XL, XEGS, 5200 Emulator for ZX Murmulator devboard by DnCraptor\""
+				},
+				{
+					"backtrace" : 31,
+					"define" : "PICO_PROGRAM_VERSION_STRING=\"test\""
+				},
+				{
+					"backtrace" : 26,
+					"define" : "PICO_RP2040_USB_DEVICE_ENUMERATION_FIX=1"
+				},
+				{
+					"backtrace" : 26,
+					"define" : "PICO_RP2040_USB_DEVICE_UFRAME_FIX=1"
+				},
+				{
+					"backtrace" : 33,
+					"define" : "PICO_TARGET_NAME=\"pico-8-bit\""
+				},
+				{
+					"backtrace" : 3,
+					"define" : "PICO_USE_BLOCKED_RAM=0"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "PSRAM_ASYNC=1"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "PSRAM_PIN_CS=18"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "PSRAM_PIN_MISO=21"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "PSRAM_PIN_MOSI=20"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "PSRAM_PIN_SCK=19"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "PSRAM_SPINLOCK=1"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "SDCARD_PIN_SPI0_CS=5"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "SDCARD_PIN_SPI0_MISO=4"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "SDCARD_PIN_SPI0_MOSI=3"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "SDCARD_PIN_SPI0_SCK=2"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "SOUND_SYSTEM"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "USE_NESPAD"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "USE_WII"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "USE_ZONE_FOR_MALLOC=1"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "WII_SCL_PIN=15"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "WII_SDA_PIN=14"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 34,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/src"
+				},
+				{
+					"backtrace" : 34,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/FakeWin"
+				},
+				{
+					"backtrace" : 34,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/BK"
+				},
+				{
+					"backtrace" : 34,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/BK/devemu"
+				},
+				{
+					"backtrace" : 34,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/BK/emutools"
+				},
+				{
+					"backtrace" : 34,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/shared"
+				},
+				{
+					"backtrace" : 34,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/disks"
+				},
+				{
+					"backtrace" : 34,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/drivers/usb"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/drivers/vga-nextgen"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/drivers/ps2"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_pio/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/common/pico_base/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/build/generated/pico_base"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/boards/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_platform/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2040/hardware_regs/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_base/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2040/hardware_structs/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_claim/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_sync/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_gpio/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_irq/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/common/pico_sync/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/common/pico_time/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_timer/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/common/pico_util/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_clocks/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_resets/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_pll/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_vreg/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_watchdog/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_xosc/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/drivers/psram"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/build/drivers/psram"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/build/drivers/sdcard"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/drivers/sdcard"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/drivers/fatfs"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/common/pico_stdlib/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_uart/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_divider/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_runtime/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_printf/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/common/pico_bit_ops/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/common/pico_divider/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_double/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_float/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_malloc/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_bootrom/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/common/pico_binary_info/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_stdio/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_int64_ops/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_mem_ops/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/boot_stage2/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_spi/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/drivers/nespad"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_rand/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_unique_id/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_flash/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_multicore/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_dma/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_i2c/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_interp/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_pwm/include"
+				},
+				{
+					"backtrace" : 26,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/lib/tinyusb/hw"
+				},
+				{
+					"backtrace" : 24,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/lib/tinyusb/src"
+				},
+				{
+					"backtrace" : 24,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/include"
+				}
+			],
+			"language" : "ASM",
+			"sourceIndexes" : 
+			[
+				130,
+				155,
+				158,
+				160,
+				161,
+				164,
+				165,
+				166,
+				169,
+				171,
+				172
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-mcpu=cortex-m0plus -mthumb   -ffunction-sections -fdata-sections -O2 -Os -DNDEBUG"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Werror"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wfatal-errors"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wdouble-promotion"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wfloat-equal"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wwrite-strings"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wsign-compare"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wmissing-format-attribute"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wunreachable-code"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wcast-align"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wcast-qual"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wnull-dereference"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wuninitialized"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wunused"
+				},
+				{
+					"backtrace" : 18,
+					"fragment" : "-Wredundant-decls"
+				},
+				{
+					"backtrace" : 19,
+					"fragment" : "-Wconversion"
+				},
+				{
+					"backtrace" : 20,
+					"fragment" : "-Wcast-function-type"
+				},
+				{
+					"backtrace" : 20,
+					"fragment" : "-Wstrict-overflow"
+				},
+				{
+					"backtrace" : 21,
+					"fragment" : "-Wno-strict-aliasing"
+				},
+				{
+					"backtrace" : 22,
+					"fragment" : "-Wno-error=suggest-attribute=format"
+				},
+				{
+					"backtrace" : 22,
+					"fragment" : "-Wno-error=cast-qual"
+				},
+				{
+					"backtrace" : 22,
+					"fragment" : "-Wno-error=unused-parameter"
+				},
+				{
+					"backtrace" : 22,
+					"fragment" : "-Wno-error=conversion"
+				},
+				{
+					"backtrace" : 22,
+					"fragment" : "-Wno-error=format="
+				},
+				{
+					"backtrace" : 22,
+					"fragment" : "-Wno-error=sign-compare"
+				},
+				{
+					"backtrace" : 22,
+					"fragment" : "-Wno-error=missing-field-initializers"
+				},
+				{
+					"backtrace" : 22,
+					"fragment" : "-Wno-error=switch"
+				},
+				{
+					"backtrace" : 22,
+					"fragment" : "-Wno-error=implicit-fallthrough="
+				},
+				{
+					"backtrace" : 22,
+					"fragment" : "-Wno-error=stringop-truncation"
+				},
+				{
+					"backtrace" : 22,
+					"fragment" : "-Wno-error=restrict"
+				},
+				{
+					"backtrace" : 22,
+					"fragment" : "-w"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-ffunction-sections"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-fdata-sections"
+				},
+				{
+					"fragment" : "-std=gnu11"
+				},
+				{
+					"fragment" : "-Wno-stringop-overflow -Wno-array-bounds"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 23,
+					"define" : "AYSOUND"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "BEEPER_PIN=28"
+				},
+				{
+					"backtrace" : 24,
+					"define" : "CFG_TUSB_DEBUG=0"
+				},
+				{
+					"backtrace" : 24,
+					"define" : "CFG_TUSB_MCU=OPT_MCU_RP2040"
+				},
+				{
+					"backtrace" : 24,
+					"define" : "CFG_TUSB_OS=OPT_OS_PICO"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "COVOX"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "ESP_PLATFORM=PICO"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_BIT_OPS=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_BIT_OPS_PICO=1"
+				},
+				{
+					"backtrace" : 26,
+					"define" : "LIB_PICO_BOOTSEL_VIA_DOUBLE_RESET=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_DIVIDER=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_DIVIDER_HARDWARE=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_DOUBLE=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_DOUBLE_PICO=1"
+				},
+				{
+					"backtrace" : 24,
+					"define" : "LIB_PICO_FIX_RP2040_USB_DEVICE_ENUMERATION=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_FLOAT=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_FLOAT_PICO=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_INT64_OPS=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_INT64_OPS_PICO=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_MALLOC=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_MEM_OPS=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_MEM_OPS_PICO=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_MULTICORE=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_PLATFORM=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_PRINTF=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_PRINTF_PICO=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_RAND=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_RUNTIME=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_STANDARD_LINK=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_STDIO=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_STDLIB=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_SYNC=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_SYNC_CRITICAL_SECTION=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_SYNC_MUTEX=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_SYNC_SEM=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_TIME=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_UNIQUE_ID=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "LIB_PICO_UTIL=1"
+				},
+				{
+					"backtrace" : 26,
+					"define" : "LIB_TINYUSB_BOARD=1"
+				},
+				{
+					"backtrace" : 24,
+					"define" : "LIB_TINYUSB_DEVICE=1"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "LOAD_WAV_2_COVOX=1"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "LOAD_WAV_PIO=22"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "NES_GPIO_CLK=14"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "NES_GPIO_DATA=16"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "NES_GPIO_LAT=15"
+				},
+				{
+					"backtrace" : 27,
+					"define" : "OVERCLOCKING=366"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "PICO_BOARD=\"pico\""
+				},
+				{
+					"backtrace" : 3,
+					"define" : "PICO_BUILD=1"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "PICO_BUILD_BOOT_STAGE2_NAME=\"compile_time_choice\""
+				},
+				{
+					"backtrace" : 3,
+					"define" : "PICO_CMAKE_BUILD_TYPE=\"MinSizeRel\""
+				},
+				{
+					"backtrace" : 3,
+					"define" : "PICO_COPY_TO_RAM=0"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "PICO_CXX_ENABLE_EXCEPTIONS=1"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "PICO_DEFAULT_UART_RX_PIN=-1"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "PICO_DEFAULT_UART_TX_PIN=0"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "PICO_HEAP_SIZE=0"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "PICO_NO_FLASH=0"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "PICO_NO_HARDWARE=0"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "PICO_ON_DEVICE=1"
+				},
+				{
+					"backtrace" : 29,
+					"define" : "PICO_PROGRAM_NAME=\"PICO Atari 400/800, XL, XEGS, 5200 Emulator for ZX Murmulator devboard by DnCraptor\""
+				},
+				{
+					"backtrace" : 31,
+					"define" : "PICO_PROGRAM_VERSION_STRING=\"test\""
+				},
+				{
+					"backtrace" : 26,
+					"define" : "PICO_RP2040_USB_DEVICE_ENUMERATION_FIX=1"
+				},
+				{
+					"backtrace" : 26,
+					"define" : "PICO_RP2040_USB_DEVICE_UFRAME_FIX=1"
+				},
+				{
+					"backtrace" : 33,
+					"define" : "PICO_TARGET_NAME=\"pico-8-bit\""
+				},
+				{
+					"backtrace" : 3,
+					"define" : "PICO_USE_BLOCKED_RAM=0"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "PSRAM_ASYNC=1"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "PSRAM_PIN_CS=18"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "PSRAM_PIN_MISO=21"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "PSRAM_PIN_MOSI=20"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "PSRAM_PIN_SCK=19"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "PSRAM_SPINLOCK=1"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "SDCARD_PIN_SPI0_CS=5"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "SDCARD_PIN_SPI0_MISO=4"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "SDCARD_PIN_SPI0_MOSI=3"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "SDCARD_PIN_SPI0_SCK=2"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "SOUND_SYSTEM"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "USE_NESPAD"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "USE_WII"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "USE_ZONE_FOR_MALLOC=1"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "WII_SCL_PIN=15"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "WII_SDA_PIN=14"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 34,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/src"
+				},
+				{
+					"backtrace" : 34,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/FakeWin"
+				},
+				{
+					"backtrace" : 34,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/BK"
+				},
+				{
+					"backtrace" : 34,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/BK/devemu"
+				},
+				{
+					"backtrace" : 34,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/BK/emutools"
+				},
+				{
+					"backtrace" : 34,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/shared"
+				},
+				{
+					"backtrace" : 34,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/disks"
+				},
+				{
+					"backtrace" : 34,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/drivers/usb"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/drivers/vga-nextgen"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/drivers/ps2"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_pio/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/common/pico_base/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/build/generated/pico_base"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/boards/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_platform/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2040/hardware_regs/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_base/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2040/hardware_structs/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_claim/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_sync/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_gpio/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_irq/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/common/pico_sync/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/common/pico_time/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_timer/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/common/pico_util/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_clocks/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_resets/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_pll/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_vreg/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_watchdog/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_xosc/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/drivers/psram"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/build/drivers/psram"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/build/drivers/sdcard"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/drivers/sdcard"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/drivers/fatfs"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/common/pico_stdlib/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_uart/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_divider/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_runtime/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_printf/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/common/pico_bit_ops/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/common/pico_divider/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_double/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_float/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_malloc/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_bootrom/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/common/pico_binary_info/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_stdio/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_int64_ops/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_mem_ops/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/boot_stage2/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_spi/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Pico/murmulator/Cross/esp_8_bit/drivers/nespad"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_rand/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_unique_id/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_flash/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_multicore/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_dma/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_i2c/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_interp/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_pwm/include"
+				},
+				{
+					"backtrace" : 26,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/lib/tinyusb/hw"
+				},
+				{
+					"backtrace" : 24,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/lib/tinyusb/src"
+				},
+				{
+					"backtrace" : 24,
+					"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/include"
+				}
+			],
+			"language" : "C",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "11"
+			},
+			"sourceIndexes" : 
+			[
+				189
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 6,
+			"id" : "slower_boot2_padded_checksummed_asm::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 11,
+			"id" : "sdcard_spi_pio_h::@64eee3e95570106616ba"
+		},
+		{
+			"backtrace" : 14,
+			"id" : "psram_psram_spi_pio_h::@9884cf9c703f5659293e"
+		}
+	],
+	"id" : "pico-8-bit::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-mcpu=cortex-m0plus -mthumb -ffunction-sections -fdata-sections -O2 -Os -DNDEBUG",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-Xlinker",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "--print-memory-usage",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "--specs=nosys.specs",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=sprintf",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=snprintf",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=vsnprintf",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__clzsi2",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__clzdi2",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__ctzsi2",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__ctzdi2",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__popcountsi2",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__popcountdi2",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__clz",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__clzl",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__clzll",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__aeabi_idiv",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__aeabi_idivmod",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__aeabi_ldivmod",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__aeabi_uidiv",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__aeabi_uidivmod",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__aeabi_uldivmod",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__aeabi_dadd",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__aeabi_ddiv",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__aeabi_dmul",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__aeabi_drsub",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__aeabi_dsub",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__aeabi_cdcmpeq",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__aeabi_cdrcmple",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__aeabi_cdcmple",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__aeabi_dcmpeq",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__aeabi_dcmplt",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__aeabi_dcmple",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__aeabi_dcmpge",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__aeabi_dcmpgt",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__aeabi_dcmpun",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__aeabi_i2d",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__aeabi_l2d",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__aeabi_ui2d",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__aeabi_ul2d",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__aeabi_d2iz",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__aeabi_d2lz",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__aeabi_d2uiz",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__aeabi_d2ulz",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__aeabi_d2f",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=sqrt",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=cos",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=sin",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=tan",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=atan2",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=exp",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=log",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=ldexp",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=copysign",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=trunc",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=floor",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=ceil",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=round",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=sincos",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=asin",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=acos",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=atan",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=sinh",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=cosh",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=tanh",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=asinh",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=acosh",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=atanh",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=exp2",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=log2",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=exp10",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=log10",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=pow",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=powint",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=hypot",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=cbrt",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=fmod",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=drem",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=remainder",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=remquo",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=expm1",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=log1p",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=fma",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__aeabi_lmul",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__aeabi_fadd",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__aeabi_fdiv",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__aeabi_fmul",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__aeabi_frsub",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__aeabi_fsub",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__aeabi_cfcmpeq",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__aeabi_cfrcmple",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__aeabi_cfcmple",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__aeabi_fcmpeq",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__aeabi_fcmplt",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__aeabi_fcmple",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__aeabi_fcmpge",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__aeabi_fcmpgt",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__aeabi_fcmpun",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__aeabi_i2f",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__aeabi_l2f",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__aeabi_ui2f",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__aeabi_ul2f",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__aeabi_f2iz",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__aeabi_f2lz",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__aeabi_f2uiz",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__aeabi_f2ulz",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__aeabi_f2d",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=sqrtf",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=cosf",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=sinf",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=tanf",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=atan2f",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=expf",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=logf",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=ldexpf",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=copysignf",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=truncf",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=floorf",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=ceilf",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=roundf",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=sincosf",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=asinf",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=acosf",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=atanf",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=sinhf",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=coshf",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=tanhf",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=asinhf",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=acoshf",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=atanhf",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=exp2f",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=log2f",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=exp10f",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=log10f",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=powf",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=powintf",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=hypotf",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=cbrtf",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=fmodf",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=dremf",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=remainderf",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=remquof",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=expm1f",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=log1pf",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=fmaf",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=malloc",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=calloc",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=realloc",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=free",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=memcpy",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=memset",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__aeabi_memcpy",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__aeabi_memset",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__aeabi_memcpy4",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__aeabi_memset4",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__aeabi_memcpy8",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=__aeabi_memset8",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,-Map=pico-8-bit-366MHz.elf.map",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "\"-Wl,--script=C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/memmap_default.ld\"",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,-z,max-page-size=4096",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--gc-sections",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=printf",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=vprintf",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=puts",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=putchar",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-Wl,--wrap=getchar",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "slower_boot2_padded_checksummed.S",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "pico-8-bit",
+	"nameOnDisk" : "pico-8-bit-366MHz.elf",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				65,
+				66,
+				67,
+				68,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				79,
+				80,
+				81,
+				82,
+				83,
+				84,
+				85,
+				86,
+				87,
+				88,
+				89,
+				90,
+				91,
+				92,
+				93,
+				94,
+				95,
+				96,
+				97,
+				98,
+				99,
+				100,
+				101,
+				102,
+				103,
+				104,
+				105,
+				106,
+				107,
+				108,
+				109,
+				110,
+				111,
+				112,
+				113,
+				114,
+				115,
+				116,
+				117,
+				118,
+				119,
+				120,
+				121,
+				122,
+				124,
+				125,
+				126,
+				127,
+				128,
+				129,
+				131,
+				132,
+				133,
+				134,
+				135,
+				136,
+				137,
+				138,
+				139,
+				140,
+				141,
+				142,
+				143,
+				144,
+				145,
+				146,
+				147,
+				148,
+				149,
+				150,
+				151,
+				152,
+				153,
+				154,
+				156,
+				157,
+				159,
+				162,
+				163,
+				167,
+				168,
+				170,
+				173,
+				174,
+				175,
+				176,
+				177,
+				179,
+				180,
+				181,
+				182,
+				183,
+				184,
+				185,
+				186,
+				187,
+				188,
+				189,
+				190,
+				191,
+				192,
+				193,
+				194,
+				195,
+				196,
+				197,
+				198,
+				199,
+				200,
+				201,
+				202,
+				203,
+				204,
+				205,
+				206
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				123,
+				178
+			]
+		},
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				130,
+				155,
+				158,
+				160,
+				161,
+				164,
+				165,
+				166,
+				169,
+				171,
+				172
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/atari800/afile.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/atari800/antic.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/atari800/artifact.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/atari800/atari.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/atari800/binload.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/atari800/cartridge.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/atari800/cassette.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/atari800/cfg.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/atari800/compfile.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/atari800/cpu.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/atari800/crc32.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/atari800/devices.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/atari800/esc.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/atari800/gtia.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/atari800/img_tape.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/atari800/input.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/atari800/libatari800_exit.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/atari800/libatari800_init.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/atari800/libatari800_main.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/atari800/libatari800_sound.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/atari800/libatari800_statesav.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/atari800/libatari800_video.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/atari800/log.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/atari800/memory.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/atari800/pbi.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/atari800/pia.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/atari800/pokey.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/atari800/pokeysnd.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/atari800/rdevice.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/atari800/roms_altirra_5200_os.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/atari800/roms_altirra_basic.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/atari800/roms_altirraos_800.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/atari800/roms_altirraos_xl.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/atari800/screen.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/atari800/sio.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/atari800/sndsave.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/atari800/sound.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/atari800/statesav.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/atari800/sysrom.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/atari800/util.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "src/emu.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "src/emu_atari800.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "src/emu_nofrendo.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "src/emu_smsplus.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "src/gui.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "src/hid_server/hci_server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "src/hid_server/hci_transport_esp32.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "src/hid_server/hid_server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/bitmap.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/config.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/event.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/fds_snd.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/gui.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/gui_elem.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/libsnss.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/log.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/map000.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/map001.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/map002.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/map003.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/map004.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/map005.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/map007.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/map008.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/map009.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/map011.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/map015.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/map016.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/map018.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/map019.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/map024.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/map032.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/map033.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/map034.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/map040.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/map041.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/map042.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/map046.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/map050.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/map064.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/map065.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/map066.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/map070.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/map073.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/map075.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/map078.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/map079.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/map085.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/map087.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/map093.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/map094.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/map099.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/map160.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/map229.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/map231.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/mapvrc.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/memguard.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/mmc5_snd.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/mmclist.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/nes.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/nes6502.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/nes_apu.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/nes_mmc.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/nes_pal.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/nes_ppu.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/nes_rom.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/nesinput.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/nesstate.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/nofrendo.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/osd.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/vid_drv.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/nofrendo/vrcvisnd.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/smsplus/render.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/smsplus/sms.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/smsplus/sn76496.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/smsplus/system.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/smsplus/vdp.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/smsplus/z80.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 35,
+			"compileGroupIndex" : 0,
+			"path" : "drivers/usb/usb.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 35,
+			"compileGroupIndex" : 0,
+			"path" : "drivers/usb/msc_disk.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 35,
+			"compileGroupIndex" : 0,
+			"path" : "drivers/usb/usb_descriptors.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "drivers/vga-nextgen/vga.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "drivers/ps2/ps2.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"path" : "drivers/ps2/ps2.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_platform/platform.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_claim/claim.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_sync/sync.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_gpio/gpio.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 2,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/common/pico_sync/sem.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/common/pico_sync/lock_core.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/common/pico_sync/mutex.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/common/pico_sync/critical_section.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/common/pico_time/time.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/common/pico_time/timeout_helper.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_timer/timer.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/common/pico_util/datetime.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/common/pico_util/pheap.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/common/pico_util/queue.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_clocks/clocks.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_pll/pll.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_vreg/vreg.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_xosc/xosc.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "drivers/psram/psram_spi.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "drivers/sdcard/sdcard.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "drivers/sdcard/pio_spi.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "drivers/fatfs/ff.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "drivers/fatfs/f_util.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "drivers/fatfs/ffsystem.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "drivers/fatfs/ffunicode.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_uart/uart.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 2,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_divider/divider.S",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_runtime/runtime.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 2,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 2,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_divider/divider.S",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 2,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_double/double_aeabi.S",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_double/double_init_rom.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_double/double_math.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 2,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 2,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 2,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_float/float_aeabi.S",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_float/float_init_rom.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_float/float_math.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 2,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 2,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 2,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/crt0.S",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 1,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_spi/spi.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 1,
+			"path" : "drivers/nespad/nespad.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"path" : "drivers/nespad/nespad.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_rand/rand.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_flash/flash.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_multicore/multicore.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_dma/dma.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_i2c/i2c.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/hardware_interp/interp.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 26,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 26,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/lib/tinyusb/hw/bsp/rp2040/family.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 3,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/lib/tinyusb/src/device/usbd.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/lib/tinyusb/src/device/usbd_control.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/lib/tinyusb/src/class/video/video_device.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/lib/tinyusb/src/tusb.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 24,
+			"compileGroupIndex" : 0,
+			"path" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

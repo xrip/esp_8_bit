@@ -1,3 +1,4 @@
+#ifdef HCI
 #include <esp_bt.h>
 #include <esp32-hal-log.h>
 #include <esp32-hal-bt.h>
@@ -115,3 +116,4 @@ void sys_set_pref(const char* key, const char* value)
     else
         printf("sys_set_pref %s:%s failed (key length <= 15?)\n",key,value);
 }
+#endif

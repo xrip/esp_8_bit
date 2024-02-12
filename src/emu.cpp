@@ -23,13 +23,13 @@ using namespace std;
 // Uses app1 as a cache with a crappy FS on top - default arduino config gives 1280k
 
 #ifdef ESP_PLATFORM
-#include <esp_spi_flash.h>
-#include <esp_attr.h>
-#include <esp_partition.h>
-#include "rom/miniz.h"
+////#include <esp_spi_flash.h>
+///#include <esp_attr.h>
+///#include <esp_partition.h>
+///#include "rom/miniz.h"
 
 // only map 1 file at a time
-spi_flash_mmap_handle_t _file_handle = 0;
+///spi_flash_mmap_handle_t _file_handle = 0;
 
 static void print_part(const esp_partition_t *pPart)
 {

@@ -1,4 +1,7 @@
-# **ESP_8_BIT:** Atari 8 bit computers, NES and SMS game consoles on your TV with nothing more than a ESP32 and a sense of nostalgia
+# **PICO_8_BIT:** Atari 8 bit computers, NES and SMS game consoles on ZX Murmulator devboard
+
+## TBA (this is fork of original esp-8-bit emulator for ESP32)
+
 ## Supports NTSC/PAL color composite video output, Bluetooth Classic or IR keyboards and joysticks; just the thing when we could all use a little distraction. This version also adds support for classic NES or SNES (one or two) controllers hardwired to the ESP32. Use SELECT + LEFT to access file menu and SELECT + START -> reset. There is also SD card support with FAT 8.3 filenames.
 
 ![ESP_8_BIT](img/esp8bit.jpg)

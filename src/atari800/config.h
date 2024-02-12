@@ -93,7 +93,7 @@
 
 /* Define to 1 if you have the <dirent.h> header file, and it defines `DIR'.
    */
-#define HAVE_DIRENT_H 1
+///#define HAVE_DIRENT_H 1
 
 /* Define to 1 if you don't have `vprintf' but do have `_doprnt.' */
 /* #undef HAVE_DOPRNT */
@@ -186,7 +186,7 @@
 #define HAVE_NETINET_IN_H 1
 
 /* Define to 1 if you have the `opendir' function. */
-#define HAVE_OPENDIR 1
+///#define HAVE_OPENDIR 1
 
 /* Support for OpenGL graphics acceleration. */
 //#define HAVE_OPENGL 1
@@ -247,7 +247,7 @@
 #define HAVE_STRERROR 1
 
 /* Define to 1 if you have the <strings.h> header file. */
-#define HAVE_STRINGS_H 1
+///#define HAVE_STRINGS_H 1
 
 /* Define to 1 if you have the <string.h> header file. */
 #define HAVE_STRING_H 1
@@ -318,7 +318,7 @@
 #define HAVE_UINTPTR_T 1
 
 /* Define to 1 if you have the <unistd.h> header file. */
-#define HAVE_UNISTD_H 1
+///#define HAVE_UNISTD_H 1
 
 /* Define to 1 if you have the <unixio.h> header file. */
 /* #undef HAVE_UNIXIO_H */
@@ -470,7 +470,7 @@
 //#define R_NETWORK 1
 
 /* Define to use the host serial port with the R: device. */
-#define R_SERIAL 1
+///#define R_SERIAL 1
 
 /* Target: SDL library. */
 //#define SDL 1

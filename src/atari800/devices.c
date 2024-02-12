@@ -56,11 +56,13 @@
 #endif
 /* XXX: <sys/dir.h>, <ndir.h>, <sys/ndir.h> */
 #ifdef HAVE_DIRENT_H
-#include <dirent.h>
+///#include <dirent.h>
 #endif
 #ifdef HAVE_SYS_STAT_H
 #include <sys/stat.h>
 #endif
+
+#include <ff.h>
 
 #include "atari.h"
 #include "binload.h"
