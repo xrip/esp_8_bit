@@ -16,6 +16,7 @@
 */
 
 #include "emu.h"
+#include "hid_server/hci_server.h"
 extern "C" {
     #include "ff.h"
 }
@@ -586,8 +587,9 @@ public:
         map<string,int> files;  // sort by name
         DIR dir;
         FRESULT res = f_opendir(&dir, name);
-        if (res != FR_OK)
+        if (res != FR_OK) {
             return;             // no folder yet
+        }
         FILINFO fileInfo;
         while(f_readdir(&dir, &fileInfo) == FR_OK && fileInfo.fname[0] != '\0') {
             if (fileInfo.fattrib & AM_DIR) {
@@ -595,12 +597,14 @@ public:
             } else {
                 string ext = get_ext(fileInfo.fname);
                 int e = want(ext.c_str());
-                if (e != -1)
+                if (e != -1) {
                     files[fileInfo.fname] = e;
+                }
             }
         }
-        for (auto& p : files)
+        for (auto& p : files) {
             _files.push_back(p.first);
+        }
         f_closedir(&dir);
     }
 
@@ -714,6 +718,7 @@ public:
 
     int find_file(const string& file)
     {
+        printf("find_file %s", file.c_str());
         for (auto i = 0; i < _files.size(); i++) {
             if (_files[i] == file)
                 return i;
@@ -912,6 +917,7 @@ public:
 
     string get_pref(const string& key)
     {
+        printf("get_pref %s", key.c_str());
         char buf[256] = {0};
         sys_get_pref((_path[1]+key).c_str(),buf,sizeof(buf)-1); // keys are limited to 15 bytes. great
         return buf;
@@ -932,15 +938,20 @@ public:
         }
 
         int recent = find_file(get_pref("recent"));
+        printf("recent %d", recent);
 
-        for (int i = 0; i < 2; i++)
+        for (int i = 0; i < 2; i++) {
+            printf("find_disk %d", recent);
             _disks[i] = find_disk(i);
+        }
 
         // just insert the first one
         if (_files.empty()) {
+            printf("(_files.empty");
             _visible = true;
         } else {
             _hilited = recent == -1 ? 0 : recent;
+            printf("(enter _hilited %d", _hilited);
             enter(0);
         }
         printf("insert_default %s DONE", path);

@@ -347,7 +347,7 @@ Emu* NewEmulator()
 
 void emu_init()
 {
-    printf("emu_init\n");
+    printf("emu_init");
     std::string folder = "\\" + _emu->name;
     gui_start(_emu,folder.c_str());
  ///   _drawn = _frame_counter;
