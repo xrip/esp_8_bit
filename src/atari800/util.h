@@ -148,7 +148,7 @@ int Util_direxists(const char *filename);
 #ifdef HAVE_REWIND
 #define Util_rewind(fp) rewind(fp)
 #else
-#define Util_rewind(fp) f_seek(fp, 0)
+#define Util_rewind(fp) f_lseek(fp, 0)
 #endif
 
 /* Returns the length of an open stream.

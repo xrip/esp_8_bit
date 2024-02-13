@@ -82,7 +82,7 @@ typedef struct __attribute__((__packed__)) {
     char filename[79];
 } file_item_t;
 
-constexpr int max_files = 2500;
+constexpr int max_files = 500;
 static file_item_t fileItems[max_files];
 
 int compareFileItems(const void* a, const void* b) {
@@ -319,6 +319,37 @@ void __not_in_flash_func(filebrowser)(const char pathname[256], const char* exec
     }
 }
 
+#include "emu.h"
+
+Emu* _emu = 0;
+
+// esp_8_bit
+// Atari 8 computers, NES and SMS game consoles on your TV with nothing more than a ESP32 and a sense of nostalgia
+// Supports NTSC/PAL composite video, Bluetooth Classic keyboards and joysticks
+// Edit src/config.h to setup emulator and video standard
+ 
+// The filesystem should contain folders named for each of the emulators i.e.
+//    atari800
+//    nofrendo
+//    smsplus
+// Folders will be auto-populated on first launch with a built in selection of sample media.
+// Use 'ESP32 Sketch Data Upload' from the 'Tools' menu to copy a prepared data folder to ESP32
+
+// Create a new emulator, messy ifdefs ensure that only one links at a time
+Emu* NewEmulator()
+{  
+  #if (EMULATOR==EMU_NES)
+  return NewNofrendo(VIDEO_STANDARD);
+  #endif
+  #if (EMULATOR==EMU_SMS)
+  return NewSMSPlus(VIDEO_STANDARD);
+  #endif
+  #if (EMULATOR==EMU_ATARI)
+  return NewAtari800(1);
+  #endif
+  printf("Must choose one of the following emulators: EMU_NES,EMU_SMS,EMU_ATARI\n");
+}
+
 int main() {
     gpio_init(PICO_DEFAULT_LED_PIN);
     gpio_set_dir(PICO_DEFAULT_LED_PIN, GPIO_OUT);
@@ -343,6 +374,9 @@ int main() {
     multicore_launch_core1(render_core);
     sem_release(&vga_start_semaphore);
     sleep_ms(250);
+
+    _emu = NewEmulator();                     // create the emulator!
+
     while(1)
         filebrowser("", "uf2");
 

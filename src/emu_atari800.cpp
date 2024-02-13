@@ -14,6 +14,7 @@
 ** ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS
 ** SOFTWARE.
 */
+#include <pico/platform.h>
 
 #include "emu.h"
 #include "media.h"
@@ -28,6 +29,23 @@ extern "C" {
 }
 
 #define printf(...)
+
+extern "C"
+void* MALLOC32(int x, const char* label)
+{
+  //  printf("MALLOC32 %d free, %d biggest, allocating %s:%d\n",
+  //    heap_caps_get_free_size(MALLOC_CAP_32BIT),heap_caps_get_largest_free_block(MALLOC_CAP_32BIT),label,x);
+    void * r = malloc(x);//heap_caps_malloc(x,MALLOC_CAP_32BIT);
+    if (!r) {
+        printf("MALLOC32 FAILED allocation of %s:%d!!!!####################\n",label,x);
+ //       esp_restart();
+    }
+    else {
+        printf("MALLOC32 allocation of %s:%d %08X\n",label,x,r);
+    }
+    return r;
+}
+
 
 using namespace std;
 string get_ext(const string& s);
@@ -398,7 +416,7 @@ const cart_info _cart_info[] = {
 };
 
 //uint32_t _atari_pal[256];
-const uint32_t atari_palette_rgb[256] = {
+static const uint32_t __in_flash() __aligned(4) atari_palette_rgb[256] = {
     0x00000000,0x000F0F0F,0x001B1B1B,0x00272727,0x00333333,0x00414141,0x004F4F4F,0x005E5E5E,
     0x00686868,0x00787878,0x00898989,0x009A9A9A,0x00ABABAB,0x00BFBFBF,0x00D3D3D3,0x00EAEAEA,
     0x00001600,0x000F2100,0x001A2D00,0x00273900,0x00334500,0x00405300,0x004F6100,0x005D7000,
@@ -434,7 +452,7 @@ const uint32_t atari_palette_rgb[256] = {
 };
 
 // swizzed ntsc palette in RAM
-const uint32_t atari_4_phase_ntsc[256] = {
+static const uint32_t __in_flash() __aligned(4) atari_4_phase_ntsc[256] = {
     0x18181818,0x1A1A1A1A,0x1C1C1C1C,0x1F1F1F1F,0x21212121,0x24242424,0x27272727,0x2A2A2A2A,
     0x2D2D2D2D,0x30303030,0x34343434,0x38383838,0x3B3B3B3B,0x40404040,0x44444444,0x49494949,
     0x1A15210E,0x1C182410,0x1E1A2612,0x211D2915,0x231F2B18,0x26222E1A,0x2925311D,0x2C283420,
@@ -470,7 +488,7 @@ const uint32_t atari_4_phase_ntsc[256] = {
 };
 uint32_t *atari_4_phase_ntsc_ram = 0;
 
-const uint32_t atari_4_phase_pal[] = {
+static const uint32_t __in_flash() __aligned(4) atari_4_phase_pal[] = {
     0x18181818,0x1B1B1B1B,0x1E1E1E1E,0x21212121,0x25252525,0x28282828,0x2B2B2B2B,0x2E2E2E2E,
     0x32323232,0x35353535,0x38383838,0x3B3B3B3B,0x3F3F3F3F,0x42424242,0x45454545,0x49494949,
     0x16271A09,0x192A1D0C,0x1C2D200F,0x1F302312,0x23342716,0x26372A19,0x293A2D1C,0x2C3D301F,
@@ -572,7 +590,7 @@ void Sound_Callback(UBYTE *buffer, unsigned int size);
 */
 
 // hid/sdl scancode to atari scancode
-const int16_t _scancode_to_atari[512] = {
+static const int16_t __in_flash() __aligned(4) _scancode_to_atari[512] = {
      -1, -1, -1, -1, 63, 21, 18, 58, 42, 56, 61, 57, 13,  1,  5,  0,
      37, 35,  8, 10, 47, 40, 62, 45, 11, 16, 46, 22, 43, 23, 31, 30,
      26, 24, 29, 27, 51, 53, 48, 50, 12, 28, 52, 44, 33, 14, 15,112,
@@ -679,6 +697,70 @@ const char* _atari_ext[] = {
     "car",
     0
 };
+
+
+    // wiimote is rotated 90%
+    const static uint32_t __in_flash() __aligned(4) _common_atari[16] = {
+        0,  // msb
+        0,
+        0,
+        CONSOLE_START<<8,       // PLUS
+        INPUT_STICK_LEFT,       // UP
+        INPUT_STICK_RIGHT,      // DOWN
+        INPUT_STICK_FORWARD,    // RIGHT
+        INPUT_STICK_BACK,       // LEFT
+
+        0, // HOME
+        0,
+        0,
+        CONSOLE_SELECT<<8,  // MINUS
+        INPUT_TRIGGER,      // A
+        INPUT_TRIGGER,      // B
+        INPUT_TRIGGER,      // ONE
+        INPUT_TRIGGER,      // TWO
+    };
+
+    const static uint32_t __in_flash() __aligned(4) _classic_atari[16] = {
+        INPUT_STICK_RIGHT,    // RIGHT
+        INPUT_STICK_BACK,     // DOWN
+        0,                    // LEFT_TOP
+        CONSOLE_SELECT<<8,    // MINUS
+        0,                    // HOME
+        CONSOLE_START<<8,     // PLUS
+        0,                    // RIGHT_TOP
+        0,
+
+        0,              // LOWER_LEFT
+        INPUT_TRIGGER,  // B
+        INPUT_TRIGGER,  // Y
+        INPUT_TRIGGER,  // A
+        INPUT_TRIGGER,  // X
+        0,              // LOWER_RIGHT
+        INPUT_STICK_LEFT,     // LEFT
+        INPUT_STICK_FORWARD   // UP
+    };
+
+    const static uint32_t __in_flash() __aligned(4) _generic_atari[16] = {
+        0,                  // GENERIC_OTHER   0x8000
+        0,                  // GENERIC_FIRE_X  0x4000  // RETCON
+        0,                  // GENERIC_FIRE_Y  0x2000
+        0,                  // GENERIC_FIRE_Z  0x1000
+
+        INPUT_TRIGGER,      //GENERIC_FIRE_A  0x0800
+        INPUT_TRIGGER,      //GENERIC_FIRE_B  0x0400
+        INPUT_TRIGGER,      //GENERIC_FIRE_C  0x0200
+        0,                  //GENERIC_RESET   0x0100     // ATARI FLASHBACK
+
+        CONSOLE_START<<8,   //GENERIC_START   0x0080
+        CONSOLE_SELECT<<8,  //GENERIC_SELECT  0x0040
+        INPUT_TRIGGER,      //GENERIC_FIRE    0x0020
+        INPUT_STICK_RIGHT,  //GENERIC_RIGHT   0x0010
+
+        INPUT_STICK_LEFT,   //GENERIC_LEFT    0x0008
+        INPUT_STICK_BACK,   //GENERIC_DOWN    0x0004
+        INPUT_STICK_FORWARD,//GENERIC_UP      0x0002
+        0,                  //GENERIC_MENU    0x0001
+    };
 
 //========================================================================================
 //========================================================================================
@@ -985,69 +1067,6 @@ public:
     {
         console_keys = pressed ? (console_keys & ~mask) : (console_keys | mask);
     }
-
-    // wiimote is rotated 90%
-    const uint32_t _common_atari[16] = {
-        0,  // msb
-        0,
-        0,
-        CONSOLE_START<<8,       // PLUS
-        INPUT_STICK_LEFT,       // UP
-        INPUT_STICK_RIGHT,      // DOWN
-        INPUT_STICK_FORWARD,    // RIGHT
-        INPUT_STICK_BACK,       // LEFT
-
-        0, // HOME
-        0,
-        0,
-        CONSOLE_SELECT<<8,  // MINUS
-        INPUT_TRIGGER,      // A
-        INPUT_TRIGGER,      // B
-        INPUT_TRIGGER,      // ONE
-        INPUT_TRIGGER,      // TWO
-    };
-
-    const uint32_t _classic_atari[16] = {
-        INPUT_STICK_RIGHT,    // RIGHT
-        INPUT_STICK_BACK,     // DOWN
-        0,                    // LEFT_TOP
-        CONSOLE_SELECT<<8,    // MINUS
-        0,                    // HOME
-        CONSOLE_START<<8,     // PLUS
-        0,                    // RIGHT_TOP
-        0,
-
-        0,              // LOWER_LEFT
-        INPUT_TRIGGER,  // B
-        INPUT_TRIGGER,  // Y
-        INPUT_TRIGGER,  // A
-        INPUT_TRIGGER,  // X
-        0,              // LOWER_RIGHT
-        INPUT_STICK_LEFT,     // LEFT
-        INPUT_STICK_FORWARD   // UP
-    };
-
-    const uint32_t _generic_atari[16] = {
-        0,                  // GENERIC_OTHER   0x8000
-        0,                  // GENERIC_FIRE_X  0x4000  // RETCON
-        0,                  // GENERIC_FIRE_Y  0x2000
-        0,                  // GENERIC_FIRE_Z  0x1000
-
-        INPUT_TRIGGER,      //GENERIC_FIRE_A  0x0800
-        INPUT_TRIGGER,      //GENERIC_FIRE_B  0x0400
-        INPUT_TRIGGER,      //GENERIC_FIRE_C  0x0200
-        0,                  //GENERIC_RESET   0x0100     // ATARI FLASHBACK
-
-        CONSOLE_START<<8,   //GENERIC_START   0x0080
-        CONSOLE_SELECT<<8,  //GENERIC_SELECT  0x0040
-        INPUT_TRIGGER,      //GENERIC_FIRE    0x0020
-        INPUT_STICK_RIGHT,  //GENERIC_RIGHT   0x0010
-
-        INPUT_STICK_LEFT,   //GENERIC_LEFT    0x0008
-        INPUT_STICK_BACK,   //GENERIC_DOWN    0x0004
-        INPUT_STICK_FORWARD,//GENERIC_UP      0x0002
-        0,                  //GENERIC_MENU    0x0001
-    };
 
     // raw HID data. handle WII mappings
     virtual void hid(const uint8_t* d, int len)

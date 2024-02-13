@@ -441,7 +441,7 @@ static int Devices_MakeDirectory(const char *filename)
 
 static int Devices_MakeDirectory(const char *filename)
 {
-	return mkdir(filename
+	return f_mkdir(filename
 #ifndef MKDIR_TAKES_ONE_ARG
 		, 0777
 #endif
@@ -471,7 +471,7 @@ static UBYTE Devices_RemoveDirectory(const char *filename)
 
 static UBYTE Devices_RemoveDirectory(const char *filename)
 {
-	if (rmdir(filename) == 0)
+	if (f_rmdir(filename) == 0)
 		return 1;
 	return (UBYTE) ((errno == ENOTEMPTY) ? 167 : 150);
 }

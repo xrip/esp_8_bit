@@ -361,7 +361,7 @@
 /* #undef LSTAT_FOLLOWS_SLASHED_SYMLINK */
 
 /* Define if mkdir takes only one argument. */
-/* #undef MKDIR_TAKES_ONE_ARG */
+#define MKDIR_TAKES_ONE_ARG
 
 /* Define to use ANSI terminal control in the monitor. */
 //#define MONITOR_ANSI 1

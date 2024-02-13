@@ -216,7 +216,7 @@ int SYSROM_SetPath(char const *filename, int num, ...)
 		f_close(&f);
 		return SYSROM_BADSIZE;
 	}
-	Util_rewind(f);
+	Util_rewind(&f);
 	if (!CRC32_FromFile(&f, &crc)) {
 		f_close(&f);
 		return SYSROM_ERROR;
@@ -309,7 +309,7 @@ int SYSROM_FindInDir(char const *directory, int only_if_not_set)
 			f_close(&file);
 			continue;
 		}
-		Util_rewind(file);
+		Util_rewind(&file);
 		if (!CRC32_FromFile(&file, &crc)) {
 			f_close(&file);
 			continue;
