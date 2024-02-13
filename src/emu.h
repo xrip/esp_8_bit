@@ -137,7 +137,7 @@ extern "C" void unmap_file(uint8_t* ptr);
 extern "C" int unpack(const char* dst_path, const uint8_t* d, int len);
 
 void audio_write_16(const int16_t* s, int len, int channels);
-int get_hid_ir(uint8_t* dst);
+///int get_hid_ir(uint8_t* dst);
 uint32_t generic_map(uint32_t m, const uint32_t* target);
 
 Emu* NewAtari800(int ntsc = 1);
@@ -145,3 +145,12 @@ Emu* NewNofrendo(int ntsc = 1);
 Emu* NewSMSPlus(int ntsc = 1);
 
 #endif /* emu_hpp */
+
+void DBG_WRITE(const char* str, size_t len);
+
+#define printf(...) { \
+ char tmp[128]; \
+ snprintf(tmp, 128, __VA_ARGS__); \
+ DBG_WRITE(tmp, 128); \
+}
+

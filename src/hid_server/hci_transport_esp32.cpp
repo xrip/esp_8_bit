@@ -117,3 +117,83 @@ void sys_set_pref(const char* key, const char* value)
         printf("sys_set_pref %s:%s failed (key length <= 15?)\n",key,value);
 }
 #endif
+#include <stdint.h>
+#include <string.h>
+#include <stdio.h>
+extern "C" {
+#include "ff.h"
+}
+
+#define KEY_LEN 256
+#define VAL_LEN 256
+
+// store and load link keys
+FIL _nvs_handle;
+static bool open_nvs()
+{
+    if (f_open(&_nvs_handle, "pico_8_bit.nvs", FA_READ | FA_WRITE | FA_OPEN_ALWAYS) != FR_OK) {
+        printf("_nvs_handle open failed!\n");
+        return false;
+    }
+    return true;
+}
+
+int sys_get_pref(const char* key, char* value, int max_len)
+{
+    value[0] = 0;
+    bool h = open_nvs();
+    if (!h)
+        return 0;
+    char ks[KEY_LEN];
+    char vs[VAL_LEN];
+    UINT rb;
+    while(1) {
+        if (f_read(&_nvs_handle, ks, KEY_LEN, &rb) != FR_OK) {
+            f_close(&_nvs_handle);
+            return 0;
+        }
+        if (f_read(&_nvs_handle, vs, VAL_LEN, &rb) != FR_OK) {
+            f_close(&_nvs_handle);
+            return 0;
+        }
+        if (strncmp(key, ks, KEY_LEN > max_len ? max_len : KEY_LEN) == 0) {
+            f_close(&_nvs_handle);
+            strncpy(value, vs, VAL_LEN > max_len ? max_len : VAL_LEN);
+            printf("sys_get_pref %s:%s %d\n",key,value,rb);
+            return (int)rb;
+        }
+    }
+    return 0;
+}
+
+void sys_set_pref(const char* key, const char* value)
+{
+    bool h = open_nvs();
+    if (!h)
+        return;
+    char vs[VAL_LEN];
+    UINT wb;
+    while(f_size(&_nvs_handle) > f_tell(&_nvs_handle)) {
+        if (f_read(&_nvs_handle, vs, VAL_LEN, &wb) != FR_OK) {
+            f_close(&_nvs_handle);
+            return;
+        }
+        if (strncmp(key, vs, VAL_LEN) == 0) {
+            strncpy(vs, value, VAL_LEN);
+            f_write(&_nvs_handle, vs, VAL_LEN, &wb);
+            f_close(&_nvs_handle);
+            printf("sys_set_pref %s:%s \n",key,value);
+            return;
+        }
+        if (f_read(&_nvs_handle, vs, VAL_LEN, &wb) != FR_OK) {
+            f_close(&_nvs_handle);
+            return;
+        }
+    }
+    strncpy(vs, key, 256);
+    f_write(&_nvs_handle, vs, 256, &wb);
+    strncpy(vs, value, 256);
+    f_write(&_nvs_handle, vs, 256, &wb);
+    f_close(&_nvs_handle);
+    printf("sys_set_pref %s:%s failed (key length <= 15?)\n",key,value);
+}

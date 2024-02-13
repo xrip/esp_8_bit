@@ -342,30 +342,6 @@ static int usec(float us)
 {
     return _samples_per_cc * round(us * _sample_rate / _samples_per_cc);  // multiple of color clock, word align
 }
-//=====================================================================================
-//AUDIO
-//=====================================================================================
-// audio is buffered as 6 bit unsigned samples
-uint8_t _audio_buffer[1024];
-uint32_t _audio_r = 0;
-uint32_t _audio_w = 0;
-void audio_write_16(const int16_t* s, int len, int channels)
-{
-    int b;
-    while (len--) {
-        if (_audio_w == (_audio_r + sizeof(_audio_buffer)))
-            break;
-        if (channels == 2) {
-            b = (s[0] + s[1]) >> 9;
-            s += 2;
-        } else
-            b = *s++ >> 8;
-        if (b < -32) b = -32;
-        if (b > 31) b = 31;
-        _audio_buffer[_audio_w++ & (sizeof(_audio_buffer)-1)] = b + 32;
-    }
-}
-
 // test pattern, must be ram
 /*uint8_t _sin64[64] = {
     0x20,0x22,0x25,0x28,0x2B,0x2E,0x30,0x33,

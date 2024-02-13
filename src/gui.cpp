@@ -1007,6 +1007,7 @@ void gui_start(Emu* emu, const char* path)
 
 void gui_update()
 {
+    printf("gui_update\n");
     _gui.update_audio();
     _gui.update_video();
 
@@ -1015,9 +1016,9 @@ void gui_update()
     if (n > 0)
         gui_hid(buf,n);
     
-    n = get_hid_ir(buf);
-    if (n > 0)
-        gui_hid(buf,n);
+///    n = get_hid_ir(buf);
+ ///   if (n > 0)
+  ///      gui_hid(buf,n);
 }
 
 void gui_key(int keycode, int pressed, int mods)
@@ -1112,4 +1113,28 @@ void gui_msg(const char* msg)         // temporarily display a msg
 void sys_msg(const char* msg)          // temporarily display a msg
 {
     gui_msg(msg);
+}
+
+//=====================================================================================
+//AUDIO
+//=====================================================================================
+// audio is buffered as 6 bit unsigned samples
+uint8_t _audio_buffer[1024];
+uint32_t _audio_r = 0;
+uint32_t _audio_w = 0;
+void audio_write_16(const int16_t* s, int len, int channels)
+{
+    int b;
+    while (len--) {
+        if (_audio_w == (_audio_r + sizeof(_audio_buffer)))
+            break;
+        if (channels == 2) {
+            b = (s[0] + s[1]) >> 9;
+            s += 2;
+        } else
+            b = *s++ >> 8;
+        if (b < -32) b = -32;
+        if (b > 31) b = 31;
+        _audio_buffer[_audio_w++ & (sizeof(_audio_buffer)-1)] = b + 32;
+    }
 }

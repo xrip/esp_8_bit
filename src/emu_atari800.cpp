@@ -28,8 +28,6 @@ extern "C" {
 #include <ff.h>
 }
 
-#define printf(...)
-
 extern "C"
 void* MALLOC32(int x, const char* label)
 {
@@ -1438,5 +1436,6 @@ void LIBATARI800_Mouse(void)
 
 Emu* NewAtari800(int ntsc)
 {
+    printf("NewAtari800\n");
     return new EmuAtari800(ntsc);
 }
