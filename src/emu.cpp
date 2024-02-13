@@ -252,13 +252,13 @@ FILE* mkfile(const char* path) // TODO:
 #include <hardware/pio.h>
 #include "ff.h"
 
-void DBG_WRITE(const char* str, size_t len) {
+void DBG_WRITE(const char* str) {
     gpio_put(PICO_DEFAULT_LED_PIN, true);
 	FIL file;
 	f_open(&file, "\\pico-8-bit.log", FA_WRITE | FA_OPEN_ALWAYS | FA_OPEN_APPEND);
 	UINT bw;
-	f_write(&file, str, len, &bw);
-	//f_write(&file, "\n", 1, &bw);
+	f_write(&file, str, strlen(str), &bw);
+	f_write(&file, "\n", 1, &bw);
 	f_close(&file);
     gpio_put(PICO_DEFAULT_LED_PIN, false);
 }

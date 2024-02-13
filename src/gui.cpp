@@ -924,6 +924,7 @@ public:
 
     void insert_default(const char* path)
     {
+        printf("insert_default %s", path);
         read_directory(path);
         if (_files.empty()) {
             _emu->make_default_media(_path);
@@ -942,6 +943,7 @@ public:
             _hilited = recent == -1 ? 0 : recent;
             enter(0);
         }
+        printf("insert_default %s DONE", path);
     }
 
     void update_video()
@@ -999,6 +1001,7 @@ Overlay _overlay;
 GUI _gui;
 void gui_start(Emu* emu, const char* path)
 {
+    printf("gui_start %s", path);
     _gui._emu = emu;
     _gui._overlay = &_overlay;
     _gui.insert_default(path);

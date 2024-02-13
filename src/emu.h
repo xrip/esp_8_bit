@@ -146,11 +146,11 @@ Emu* NewSMSPlus(int ntsc = 1);
 
 #endif /* emu_hpp */
 
-void DBG_WRITE(const char* str, size_t len);
+void DBG_WRITE(const char* str);
 
 #define printf(...) { \
  char tmp[128]; \
  snprintf(tmp, 128, __VA_ARGS__); \
- DBG_WRITE(tmp, 128); \
+ DBG_WRITE(tmp); \
 }
 
