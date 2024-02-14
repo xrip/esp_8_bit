@@ -947,11 +947,11 @@ public:
 
         // just insert the first one
         if (_files.empty()) {
-            printf("(_files.empty");
+            printf("_files.empty");
             _visible = true;
         } else {
             _hilited = recent == -1 ? 0 : recent;
-            printf("(enter _hilited %d", _hilited);
+            printf("enter _hilited %d", _hilited);
             enter(0);
         }
         printf("insert_default %s DONE", path);

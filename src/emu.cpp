@@ -342,6 +342,7 @@ int Emu::frame_sample_count()
 
 int Emu::insert(const std::string& path, int flags, int disk_index)
 {
+    printf("Emu::insert %s, flags: %08Xh, disk_index: %d", path.c_str(), flags, disk_index);
     return -1;
 }
 

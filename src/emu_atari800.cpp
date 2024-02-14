@@ -39,7 +39,7 @@ void* MALLOC32(int x, const char* label)
  //       esp_restart();
     }
     else {
-        printf("MALLOC32 allocation of %s:%d %08X\n",label,x,r);
+        printf("MALLOC32 allocation for %s; len: %d; @%08X", label, x, r);
     }
     return r;
 }
@@ -1171,6 +1171,7 @@ public:
     // allocate most of the big stuff in 32 bit  mem
     void init_screen()
     {
+        printf("EmuAtari800::init_screen 384x240");
         Screen_atari = (ULONG*)MALLOC32(Screen_WIDTH*Screen_HEIGHT,"Screen_atari");    // 32 bit access plz
         MEMORY_mem = (uint8_t*)MALLOC32(64*1024 + 4,"MEMORY_mem");
         _lines = (uint8_t**)MALLOC32(height*sizeof(uint8_t*),"_lines");
@@ -1309,9 +1310,10 @@ public:
 
     virtual int insert(const std::string& path, int flags, int disk_index)
     {
-        if (!_lines)
+        printf("EmuAtari800::insert %s, flags: %08Xh, disk_index: %d", path.c_str(), flags, disk_index);
+        if (!_lines) {
             init_screen();
-
+        }
         // just insert a disk
         if (((flags & 1) == 0) && (get_ext(path) == "atr")) {
             printf("inserting %s into drive %d\n",path.c_str(),disk_index+1);
