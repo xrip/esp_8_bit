@@ -7,6 +7,8 @@
 /* The Austin Franklin 80 column card. */
 //#define AF80 1
 
+#define DIR_SEP_BACKSLASH
+
 /* Target: Android */
 /* #undef ANDROID */
 

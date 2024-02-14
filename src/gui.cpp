@@ -359,22 +359,23 @@ public:
             case EMU_NES:
                 OVERLAY_WIDTH = 28;
                 OVERLAY_HEIGHT = 20;
-                set_colors(0x39,0x09);  // nes
+                set_colors(0x39, 0x09);  // nes
                 break;
             case EMU_ATARI:
                 OVERLAY_WIDTH = 34;
                 OVERLAY_HEIGHT = 22;
-                set_colors(0xCE,0xC2);  // atari
+                set_colors(0xCE, 0xC2);  // atari
                 break;
             case EMU_SMS:
                 OVERLAY_WIDTH = 28;
                 OVERLAY_HEIGHT = 20;
-                set_colors(7<<2,1<<3);  // sms - 332 rgb
+                set_colors(7<<2, 1<<3);  // sms - 332 rgb
                 break;
         }
-
-        _buf = new uint8_t[OVERLAY_WIDTH*OVERLAY_HEIGHT];
-        memset(_buf,0,OVERLAY_WIDTH*OVERLAY_HEIGHT);
+        size_t sz = OVERLAY_WIDTH * OVERLAY_HEIGHT;
+        _buf = new uint8_t[sz];
+        printf("Overlay::init new uint8_t[%d] : %08Xh", sz, _buf);
+        memset(_buf, 0, sz);
     }
 
     void set_hilite(int c)
@@ -671,7 +672,7 @@ public:
     void insert(const string& path, int flags)
     {
         set_pref("recent",path);
-        _emu->insert(_path + "/" + path,flags);
+        _emu->insert(_path + "\\" + path,flags);
     }
 
     void insert_disk(int dindex, int findex, int reboot = 0)
@@ -682,7 +683,7 @@ public:
         set_pref(disk_name(dindex),file);
         if (dindex == 0)
             set_pref("recent",file);
-        _emu->insert(_path + "/" + file,reboot,dindex);
+        _emu->insert(_path + "\\" + file,reboot,dindex);
     }
 
     void enter(int mods)
@@ -907,7 +908,7 @@ public:
             _dirty = false;
             _info.clear();
             int index = _tab_hilited[0];
-            _emu->info(_path + "/" + _files[index],_info);
+            _emu->info(_path + "\\" + _files[index],_info);
         }
         int i;
         for (i = 0; i < (int)_info.size(); i++)
@@ -1016,17 +1017,16 @@ void gui_start(Emu* emu, const char* path)
     _gui._emu = emu;
     _gui._overlay = &_overlay;
     _gui.insert_default(path);
-    _overlay.init(emu->video_buffer(),emu->width,emu->height,emu->flavor);
+    _overlay.init(emu->video_buffer(), emu->width, emu->height, emu->flavor);
 }
 
 void gui_update()
 {
-    printf("gui_update\n");
     _gui.update_audio();
     _gui.update_video();
 
     uint8_t buf[64];
-    int n = hid_get(buf,sizeof(buf));    // called from emulation loop
+    int n = hid_get(buf, sizeof(buf));    // called from emulation loop
     if (n > 0)
         gui_hid(buf,n);
     

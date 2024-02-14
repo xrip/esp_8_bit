@@ -330,7 +330,7 @@ public:
         string ext = get_ext(file);
         uint8_t hdr[48];
         int len = Emu::head(file,hdr,sizeof(hdr));
-        string name = file.substr(file.find_last_of("/") + 1);
+        string name = file.substr(file.find_last_of("\\") + 1);
         strs.push_back(name);
         strs.push_back("");
         if (ext == "gg")
@@ -558,9 +558,9 @@ public:
 
     virtual int make_default_media(const string& path)
     {
-        unpack((path + "/ftrack.gg").c_str(),ftrack_gg,sizeof(ftrack_gg));
-        unpack((path + "/baraburuu.sms").c_str(),baraburuu_sms,sizeof(baraburuu_sms));
-        unpack((path + "/nanowars8k.sms").c_str(),nanowars8k_sms,sizeof(nanowars8k_sms));
+        unpack((path + "\\ftrack.gg").c_str(),ftrack_gg,sizeof(ftrack_gg));
+        unpack((path + "\\baraburuu.sms").c_str(),baraburuu_sms,sizeof(baraburuu_sms));
+        unpack((path + "\\nanowars8k.sms").c_str(),nanowars8k_sms,sizeof(nanowars8k_sms));
         return 0;
     }
 };

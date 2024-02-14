@@ -949,7 +949,7 @@ int get_info(const string& file, vector<string>& strs)
     string ext = get_ext(file);
     uint8_t hdr[48];
     int len = Emu::head(file,hdr,sizeof(hdr));
-    string name = file.substr(file.find_last_of("/") + 1);
+    string name = file.substr(file.find_last_of("\\") + 1);
     strs.push_back(name);
     strs.push_back("");
 
@@ -1276,7 +1276,7 @@ public:
         }
 
         // no idea. just go with defaults of xl
-        string host = path.substr(0,path.find_last_of("/"));
+        string host = path.substr(0,path.find_last_of("\\"));
         return "-xl \"" + path + "\"" + " -H1 \"" + host + "\"";
     }
 

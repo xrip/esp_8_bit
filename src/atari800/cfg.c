@@ -79,7 +79,7 @@ extern char UI_saved_files_dir[UI_MAX_DIRECTORIES][FILENAME_MAX];
 #endif
 
 #ifndef SYSTEM_WIDE_CFG_FILE
-#define SYSTEM_WIDE_CFG_FILE "/etc/atari800.cfg"
+#define SYSTEM_WIDE_CFG_FILE "\\atari800.cfg"
 #endif
 
 static char rtconfig_filename[FILENAME_MAX];
