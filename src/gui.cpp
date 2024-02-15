@@ -968,18 +968,23 @@ public:
                 case 1: draw_info(); break;
                 case 2: draw_help(); break;
             }
+            printf("_overlay->update() ^ _tab: %d", _tab);
             _overlay->update();
         } else {
+            printf("_emu->update()");
             _emu->update();
         }
 
         // message goes over both
         if (_msg.size()) {
             if (--_msg_ticks == 0) {
+                printf("_overlay->erase_msg()");
                 _overlay->erase_msg();
                 _msg.clear();
-            } else
+            } else {
+                printf("_overlay->draw_msg(%s)", _msg.c_str());
                 _overlay->draw_msg(_msg);
+            }
         }
     }
 

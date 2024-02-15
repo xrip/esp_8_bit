@@ -146,7 +146,7 @@ Emu* NewSMSPlus(int ntsc = 1);
 
 #endif /* emu_hpp */
 
-void DBG_WRITE(const char* str);
+extern "C" void DBG_WRITE(const char* str);
 
 #define printf(...) { \
  char tmp[128]; \

@@ -16,6 +16,7 @@ extern "C" {
 
 #include "ff.h"
 #include "nespad.h"
+#include "video_out.h"
 
 static FATFS fs;
 semaphore vga_start_semaphore;
@@ -356,7 +357,7 @@ void emu_init()
 void emu_loop()
 {
     // wait for blanking before drawing to avoid tearing
-   /// video_sync();
+    video_sync();
 
     // Draw a frame, update sound, process hid events
  ///   uint32_t t = xthal_get_ccount();
@@ -397,6 +398,8 @@ int main() {
     }
 
     _emu = NewEmulator();                     // create the emulator!
+    video_init(_emu->cc_width, _emu->flavor, _emu->composite_palette(), _emu->standard); // start the A/V pump on app core
+    // TODO: core1
     emu_init();
     for (;;)
       emu_loop();

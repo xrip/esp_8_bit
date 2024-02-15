@@ -249,20 +249,6 @@ FILE* mkfile(const char* path) // TODO:
 */
 #endif
 
-#include <hardware/pio.h>
-#include "ff.h"
-
-void DBG_WRITE(const char* str) {
-    gpio_put(PICO_DEFAULT_LED_PIN, true);
-	FIL file;
-	f_open(&file, "\\pico-8-bit.log", FA_WRITE | FA_OPEN_ALWAYS | FA_OPEN_APPEND);
-	UINT bw;
-	f_write(&file, str, strlen(str), &bw);
-	f_write(&file, "\n", 1, &bw);
-	f_close(&file);
-    gpio_put(PICO_DEFAULT_LED_PIN, false);
-}
-
 // map one bit array to another
 uint32_t generic_map(uint32_t bits, const uint32_t* m)
 {

@@ -241,14 +241,14 @@ void* MALLOC32(int x, const char* label)
 #define DRAM_ATTR
 
 void video_init_hw(int line_width, int samples_per_cc);
-
+/**
 uint32_t xthal_get_ccount() {
-    unsigned int lo,hi;
-    __asm__ __volatile__ ("rdtsc" : "=a" (lo), "=d" (hi));
+    unsigned int lo, hi;
+    __asm__  ("rdtsc" : "=a" (lo), "=d" (hi));
     return lo;
     //return ((uint64_t)hi << 32) | lo;
 }
-
+*/
 void audio_sample(uint8_t s);
 
 void ir_sample();
@@ -328,7 +328,7 @@ int _active_start;
 
 int16_t* _burst0 = 0; // pal bursts
 int16_t* _burst1 = 0;
-
+/***
 uint32_t cpu_ticks()
 {
   return xthal_get_ccount();
@@ -337,10 +337,10 @@ uint32_t cpu_ticks()
 uint32_t us() {
     return cpu_ticks()/240;
 }
-
+*/
 static int usec(float us)
 {
-    return _samples_per_cc * round(us * _sample_rate / _samples_per_cc);  // multiple of color clock, word align
+    return _samples_per_cc * int(us * _sample_rate / _samples_per_cc);  // multiple of color clock, word align
 }
 // test pattern, must be ram
 /*uint8_t _sin64[64] = {
@@ -377,6 +377,35 @@ void IRAM_ATTR test_wave(volatile void* vbuf, int t = 1)
             break;
     }
 }*/
+
+void video_init(int samples_per_cc, int machine, const uint32_t* palette, int ntsc) {
+    printf("video_init samples_per_cc: %d; machine: %d", samples_per_cc, machine);
+}
+
+void IRAM_ATTR blit(uint8_t* src, uint16_t* dst) {
+    printf("blint");
+}
+
+void IRAM_ATTR burst(uint16_t* line) {
+    printf("burst line: %08Xh", line);
+}
+
+void IRAM_ATTR sync(uint16_t* line, int syncwidth) {
+    printf("sync line: %08Xh syncwidth: %d", line, syncwidth);
+}
+
+void IRAM_ATTR blanking(uint16_t* line, bool vbl) {
+    printf("blanking line: %08Xh vbl: %d", line, vbl);
+}
+
+void video_sync() {
+    printf("video_sync");
+}
+
+// Workhorse ISR handles audio and video updates
+extern "C" void IRAM_ATTR video_isr(volatile void* vbuf) {
+    printf("video_isr vbuf: %08Xh", vbuf);
+}
 
 #if VIDEO_STANDARD > 0
 //=====================================================================================
@@ -592,7 +621,8 @@ void IRAM_ATTR video_isr(volatile void* vbuf)
     ISR_END();
 }
 
-#else
+#endif
+#if PAL
 //=====================================================================================
 //PAL VIDEO
 //=====================================================================================

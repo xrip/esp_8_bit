@@ -1337,11 +1337,13 @@ public:
 
     virtual int update()
     {
+        printf("libatari800_next_frame");
         return libatari800_next_frame(NULL);
     }
 
     virtual uint8_t** video_buffer()
     {
+        printf("video_buffer: %08Xh", _lines);
         return _lines;
     }
 

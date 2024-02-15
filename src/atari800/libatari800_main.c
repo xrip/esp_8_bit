@@ -64,6 +64,20 @@
 #include "votraxsnd.h"
 #endif
 
+#include <hardware/pio.h>
+#include "ff.h"
+
+void DBG_WRITE(const char* str) {
+    gpio_put(PICO_DEFAULT_LED_PIN, true);
+	FIL file;
+	f_open(&file, "\\pico-8-bit.log", FA_WRITE | FA_OPEN_ALWAYS | FA_OPEN_APPEND);
+	UINT bw;
+	f_write(&file, str, strlen(str), &bw);
+	f_write(&file, "\n", 1, &bw);
+	f_close(&file);
+    gpio_put(PICO_DEFAULT_LED_PIN, false);
+}
+
 extern int debug_sound;
 
 int PLATFORM_Configure(char *option, char *parameters)
@@ -149,6 +163,7 @@ void LIBATARI800_Frame(void)
 	Sound_Update();
 #endif
 	Atari800_nframes++;
+	printf("LIBATARI800_Frame Atari800_nframes: %d", Atari800_nframes)
 }
 
 
@@ -234,9 +249,11 @@ int libatari800_next_frame(input_template_t *input)
 		/* normal operation */
 		LIBATARI800_Frame();
 		if (CPU_cim_encountered) {
+			printf("CPU_cim_encountered");
 			libatari800_error_code = LIBATARI800_CPU_CRASH;
 		}
 		else if (ANTIC_dlist == 0) {
+			printf("ANTIC_dlist == 0");
 			libatari800_error_code = LIBATARI800_DLIST_ERROR;
 		}
 	}
