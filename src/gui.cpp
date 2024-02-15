@@ -971,7 +971,7 @@ public:
             printf("_overlay->update() ^ _tab: %d", _tab);
             _overlay->update();
         } else {
-            printf("_emu->update()");
+            //printf("_emu->update()");
             _emu->update();
         }
 

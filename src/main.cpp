@@ -346,25 +346,19 @@ Emu* NewEmulator()
   printf("Must choose one of the following emulators: EMU_NES,EMU_SMS,EMU_ATARI\n");
 }
 
-void emu_init()
-{
+void emu_init() {
     printf("emu_init");
     std::string folder = "\\" + _emu->name;
     gui_start(_emu, folder.c_str());
- ///   _drawn = _frame_counter;
 }
 
-void emu_loop()
-{
+void emu_loop() {
     // wait for blanking before drawing to avoid tearing
     video_sync();
-
     // Draw a frame, update sound, process hid events
- ///   uint32_t t = xthal_get_ccount();
     gui_update();
-  ///  _frame_time = xthal_get_ccount() - t;
- ///   _lines = _emu->video_buffer();
-  ///  _drawn++;
+    _lines = _emu->video_buffer();
+    graphics_set_buffer(*_lines, _emu->cc_width, 240);
 }
 
 int main() {
@@ -399,6 +393,8 @@ int main() {
 
     _emu = NewEmulator();                     // create the emulator!
     video_init(_emu->cc_width, _emu->flavor, _emu->composite_palette(), _emu->standard); // start the A/V pump on app core
+    graphics_set_buffer(*_lines, _emu->cc_width, 240);
+    // TODO: palette
     // TODO: core1
     emu_init();
     for (;;)

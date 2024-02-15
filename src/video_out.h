@@ -399,7 +399,7 @@ void IRAM_ATTR blanking(uint16_t* line, bool vbl) {
 }
 
 void video_sync() {
-    printf("video_sync");
+    // printf("video_sync");
 }
 
 // Workhorse ISR handles audio and video updates

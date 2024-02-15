@@ -123,24 +123,26 @@ int PLATFORM_Initialise(int *argc, char *argv[])
 	/* turn off frame sync, return frames as fast as possible and let whatever
 	 calls process_frame to manage syncing to NTSC or PAL */
 	Atari800_turbo = TRUE;
-
 	return TRUE;
 }
 
 
-void LIBATARI800_Frame(void)
-{
+void LIBATARI800_Frame(void) {
 	switch (INPUT_key_code) {
 	case AKEY_COLDSTART:
+	    ///printf("Atari800_Coldstart");
 		Atari800_Coldstart();
 		break;
 	case AKEY_WARMSTART:
+	    ///printf("Atari800_Warmstart");
 		Atari800_Warmstart();
 		break;
 	case AKEY_UI:
+		///printf("PLATFORM_Exit");
 		PLATFORM_Exit(TRUE);  /* run monitor */
 		break;
 	default:
+		///printf("INPUT_key_code %04Xh", INPUT_key_code);
 		break;
 	}
 
@@ -163,7 +165,7 @@ void LIBATARI800_Frame(void)
 	Sound_Update();
 #endif
 	Atari800_nframes++;
-	printf("LIBATARI800_Frame Atari800_nframes: %d", Atari800_nframes)
+	///printf("LIBATARI800_Frame Atari800_nframes: %d", Atari800_nframes)
 }
 
 

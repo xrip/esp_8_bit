@@ -119,6 +119,7 @@ void __time_critical_func() dma_handler_VGA() {
         case TGA_320x200x16:
         case EGA_320x200x16x4:
         case VGA_320x200x256x4:
+        case ATARI_384x240x2:
         case GRAPHICSMODE_DEFAULT:
             line_number = screen_line / 2;
             if (screen_line % 2) return;
@@ -251,6 +252,20 @@ void __time_critical_func() dma_handler_VGA() {
 
     uint8_t* output_buffer_8bit;
     switch (graphics_mode) {
+        case ATARI_384x240x2:
+            output_buffer_8bit = (uint8_t *)output_buffer_16bit;
+            for (int x = width / 4; x--;) { // TBA
+                *output_buffer_8bit++ = current_palette[*input_buffer_8bit >> 7 & 1];
+                *output_buffer_8bit++ = current_palette[*input_buffer_8bit >> 6 & 1];
+                *output_buffer_8bit++ = current_palette[*input_buffer_8bit >> 5 & 1];
+                *output_buffer_8bit++ = current_palette[*input_buffer_8bit >> 4 & 1];
+                *output_buffer_8bit++ = current_palette[*input_buffer_8bit >> 3 & 1];
+                *output_buffer_8bit++ = current_palette[*input_buffer_8bit >> 2 & 1];
+                *output_buffer_8bit++ = current_palette[*input_buffer_8bit >> 1 & 1];
+                *output_buffer_8bit++ = current_palette[*input_buffer_8bit >> 0 & 1];
+                input_buffer_8bit++;
+            }
+            break;
         case CGA_640x200x2:
             output_buffer_8bit = (uint8_t *)output_buffer_16bit;
         //1bit buf
@@ -392,24 +407,18 @@ void graphics_set_mode(enum graphics_mode_t mode) {
         case VGA_320x200x256x4:
         case EGA_320x200x16x4:
         case TGA_320x200x16:
-
+        case ATARI_384x240x2:
             TMPL_LINE8 = 0b11000000;
             HS_SHIFT = 328 * 2;
             HS_SIZE = 48 * 2;
-
             line_size = 400 * 2;
-
             shift_picture = line_size - HS_SHIFT;
-
             palette16_mask = 0xc0c0;
-
             visible_line_size = 320;
-
             N_lines_total = 525;
             N_lines_visible = 480;
             line_VS_begin = 490;
             line_VS_end = 491;
-
             fdiv = clock_get_hz(clk_sys) / 25175000.0; //частота пиксельклока
             break;
         default:
@@ -613,7 +622,7 @@ void graphics_init() {
     );
     //dma_channel_set_read_addr(dma_chan, &DMA_BUF_ADDR[0], false);
 
-    graphics_set_mode(TGA_320x200x16);
+    graphics_set_mode(ATARI_384x240x2);
 
     irq_set_exclusive_handler(VGA_DMA_IRQ, dma_handler_VGA);
 
