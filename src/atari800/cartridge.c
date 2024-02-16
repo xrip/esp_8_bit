@@ -1237,11 +1237,12 @@ static void ResetCartState(CARTRIDGE_image_t *cart)
 	}
 }
 
-void unmap_file(void* ptr);
+// xrip FIXME!!
+//void unmap_file(void* ptr);
 void free_cart(CARTRIDGE_image_t *cart)
 {
     printf("free_cart %s:%d\n",cart->filename,cart->size);
-    unmap_file(cart->base);
+//    unmap_file(cart->base);
 }
 
 /* Before first use of the cartridge, preprocess its contents if needed. */
@@ -1445,7 +1446,7 @@ void CARTRIDGE_ColdStart(void) {
    Allocates a buffer with cartridge image data and puts it in *CART_IMAGE.
    Sets *CART_TYPE to the cartridge type. */
 
-uint8_t* map_file(const char* path, int len);
+// uint8_t* map_file(const char* path, int len);
 
 static int InsertCartridge(const char *filename, CARTRIDGE_image_t *cart)
 {
@@ -1471,7 +1472,8 @@ static int InsertCartridge(const char *filename, CARTRIDGE_image_t *cart)
 	if ((len & 0x3ff) == 0) {
 
         fclose(fp);
-        cart->image = cart->base = map_file(filename,len);
+		// xrip FIXME!!
+		// cart->image = cart->base = map_file(filename,len);
 #if 0
 		/* alloc memory and read data */
 		cart->image = (UBYTE *) Util_malloc(len);
@@ -1522,7 +1524,8 @@ static int InsertCartridge(const char *filename, CARTRIDGE_image_t *cart)
 			cart->size = CARTRIDGE_kb[type];
 
             fclose(fp);
-            cart->base = map_file(filename,len+16);   // skip header
+			// xrip FIXME!!
+            // cart->base = map_file(filename,len+16);   // skip header
             cart->image = cart->base + 16;
 #if 0
 			/* alloc memory and read data */

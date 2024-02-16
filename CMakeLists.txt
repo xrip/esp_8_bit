@@ -40,7 +40,9 @@ add_subdirectory(drivers/tv)
 add_subdirectory(drivers/graphics)
 
 # INCLUDE FILES THAT SHOULD BE COMPILED:
-file(GLOB_RECURSE SRC "src/*.cpp" "src/*.c" "drivers/usb/*.c")
+file(GLOB_RECURSE SRC "src/*.cpp" "src/*.c"
+#        "drivers/usb/*.c"
+)
 
 message(STATUS "Add source files:")
 foreach (SRC_FILE IN LISTS SRC)
@@ -136,9 +138,6 @@ target_compile_definitions(${PROJECT_NAME} PRIVATE
 
 
 pico_define_boot_stage2(slower_boot2 ${PICO_DEFAULT_BOOT_STAGE2_FILE})
-math(EXPR CUSTOM_XIP_BASE "1024 * (${FLASH_SIZE} - 64) + 0x10000000")
-message(STATUS "${CUSTOM_XIP_BASE}")
-target_compile_definitions(slower_boot2 PRIVATE CUSTOM_XIP_BASE=${CUSTOM_XIP_BASE})
 target_compile_definitions(slower_boot2 PRIVATE PICO_FLASH_SPI_CLKDIV=4)
 pico_set_boot_stage2(${PROJECT_NAME} slower_boot2)
 
@@ -172,7 +171,7 @@ ENDIF ()
 set_target_properties(${PROJECT_NAME} PROPERTIES OUTPUT_NAME "${BUILD_NAME}")
 
 pico_enable_stdio_uart(${PROJECT_NAME} 0)
-pico_enable_stdio_usb(${PROJECT_NAME} 0)
+pico_enable_stdio_usb(${PROJECT_NAME} 1)
 
 #pico_set_binary_type(${PROJECT_NAME} no_flash)
 #pico_set_binary_type(${PROJECT_NAME} copy_to_ram)

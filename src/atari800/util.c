@@ -55,6 +55,8 @@
 #include "platform.h"
 #include "util.h"
 
+#include <pico/time.h>
+
 int Util_chrieq(char c1, char c2)
 {
 	switch (c1 ^ c2) {
@@ -512,7 +514,8 @@ void Util_sleep(double s)
 		struct timespec ts;
 		ts.tv_sec = 0;
 		ts.tv_nsec = s * 1e9;
-		nanosleep(&ts, NULL);
+		// nanosleep(&ts, NULL);
+		sleep_us(s * 1e9);
 #elif defined(HAVE_USLEEP)
 		usleep(s * 1e6);
 #elif defined(__BEOS__)
